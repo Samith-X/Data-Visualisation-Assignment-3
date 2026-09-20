@@ -1,0 +1,514 @@
+"country_code","country","year","life_expectancy"
+"ARG","Argentina",2015,76.6
+"ARG","Argentina",2016,76.1
+"ARG","Argentina",2017,76.5
+"ARG","Argentina",2018,76.8
+"ARG","Argentina",2019,76.8
+"ARG","Argentina",2020,75.9
+"ARG","Argentina",2021,73.9
+"ARG","Argentina",2022,75.8
+"ARG","Argentina",2023,77.4
+"ARG","Argentina",2024,77.5
+"AUS","Australia",2015,82.4
+"AUS","Australia",2016,82.4
+"AUS","Australia",2017,82.5
+"AUS","Australia",2018,82.8
+"AUS","Australia",2019,82.9
+"AUS","Australia",2020,83.2
+"AUS","Australia",2021,83.3
+"AUS","Australia",2022,83.2
+"AUS","Australia",2023,83
+"AUS","Australia",2024,83
+"AUT","Austria",2015,81.2
+"AUT","Austria",2016,81.6
+"AUT","Austria",2017,81.6
+"AUT","Austria",2018,81.7
+"AUT","Austria",2019,81.9
+"AUT","Austria",2020,81.3
+"AUT","Austria",2021,81.3
+"AUT","Austria",2022,81.4
+"AUT","Austria",2023,81.9
+"AUT","Austria",2024,82.1
+"BEL","Belgium",2015,80.9
+"BEL","Belgium",2016,81.3
+"BEL","Belgium",2017,81.4
+"BEL","Belgium",2018,81.5
+"BEL","Belgium",2019,81.8
+"BEL","Belgium",2020,80.8
+"BEL","Belgium",2021,81.7
+"BEL","Belgium",2022,81.7
+"BEL","Belgium",2023,82.3
+"BEL","Belgium",2024,82.4
+"BRA","Brazil",2015,75.1
+"BRA","Brazil",2016,75.1
+"BRA","Brazil",2017,75.4
+"BRA","Brazil",2018,75.6
+"BRA","Brazil",2019,75.8
+"BRA","Brazil",2020,74.5
+"BRA","Brazil",2021,73
+"BRA","Brazil",2022,74.9
+"BRA","Brazil",2023,75.8
+"BRA","Brazil",2024,76
+"BGR","Bulgaria",2015,74.5
+"BGR","Bulgaria",2016,74.7
+"BGR","Bulgaria",2017,74.6
+"BGR","Bulgaria",2018,74.7
+"BGR","Bulgaria",2019,74.8
+"BGR","Bulgaria",2020,73.3
+"BGR","Bulgaria",2021,71.2
+"BGR","Bulgaria",2022,74.1
+"BGR","Bulgaria",2023,75.7
+"BGR","Bulgaria",2024,75.8
+"CAN","Canada",2015,81.9
+"CAN","Canada",2016,82
+"CAN","Canada",2017,81.9
+"CAN","Canada",2018,81.9
+"CAN","Canada",2019,82.2
+"CAN","Canada",2020,81.6
+"CAN","Canada",2021,81.5
+"CAN","Canada",2022,81.1
+"CAN","Canada",2023,81.7
+"CAN","Canada",2024,82.2
+"CHL","Chile",2015,79.9
+"CHL","Chile",2016,80.3
+"CHL","Chile",2017,80.5
+"CHL","Chile",2018,80.8
+"CHL","Chile",2019,80.9
+"CHL","Chile",2020,79.9
+"CHL","Chile",2021,79.2
+"CHL","Chile",2022,79.8
+"CHL","Chile",2023,81.2
+"CHL","Chile",2024,81.3
+"CHL","Chile",2025,81.5
+"CHN","China (People’s Republic of)",2015,77
+"CHN","China (People’s Republic of)",2016,77.2
+"CHN","China (People’s Republic of)",2017,77.2
+"CHN","China (People’s Republic of)",2018,77.7
+"CHN","China (People’s Republic of)",2019,77.9
+"CHN","China (People’s Republic of)",2020,78
+"CHN","China (People’s Republic of)",2021,78.1
+"CHN","China (People’s Republic of)",2022,78.2
+"CHN","China (People’s Republic of)",2023,78
+"CHN","China (People’s Republic of)",2024,78
+"COL","Colombia",2015,75.4
+"COL","Colombia",2016,75.7
+"COL","Colombia",2017,75.9
+"COL","Colombia",2018,75.3
+"COL","Colombia",2019,75.5
+"COL","Colombia",2020,74.4
+"COL","Colombia",2021,74.2
+"COL","Colombia",2022,74.9
+"COL","Colombia",2023,76.3
+"COL","Colombia",2024,76.4
+"COL","Colombia",2025,76.6
+"CRI","Costa Rica",2015,79.9
+"CRI","Costa Rica",2016,80
+"CRI","Costa Rica",2017,80.2
+"CRI","Costa Rica",2018,80.3
+"CRI","Costa Rica",2019,80.5
+"CRI","Costa Rica",2020,80.6
+"CRI","Costa Rica",2021,80.8
+"CRI","Costa Rica",2022,80.9
+"CRI","Costa Rica",2023,81
+"CRI","Costa Rica",2024,80.9
+"CRI","Costa Rica",2025,81.1
+"HRV","Croatia",2015,77.4
+"HRV","Croatia",2016,78
+"HRV","Croatia",2017,77.8
+"HRV","Croatia",2018,78
+"HRV","Croatia",2019,78.3
+"HRV","Croatia",2020,77.6
+"HRV","Croatia",2021,76.6
+"HRV","Croatia",2022,77.7
+"HRV","Croatia",2023,78.5
+"HRV","Croatia",2024,78.9
+"CZE","Czechia",2015,78.6
+"CZE","Czechia",2016,79
+"CZE","Czechia",2017,79
+"CZE","Czechia",2018,79
+"CZE","Czechia",2019,79.2
+"CZE","Czechia",2020,78.3
+"CZE","Czechia",2021,77.2
+"CZE","Czechia",2022,79
+"CZE","Czechia",2023,79.8
+"CZE","Czechia",2024,80.1
+"DNK","Denmark",2015,80.7
+"DNK","Denmark",2016,80.9
+"DNK","Denmark",2017,81.1
+"DNK","Denmark",2018,81
+"DNK","Denmark",2019,81.4
+"DNK","Denmark",2020,81.5
+"DNK","Denmark",2021,81.4
+"DNK","Denmark",2022,81.3
+"DNK","Denmark",2023,81.7
+"DNK","Denmark",2024,82
+"EST","Estonia",2015,77.7
+"EST","Estonia",2016,77.8
+"EST","Estonia",2017,78.2
+"EST","Estonia",2018,78.4
+"EST","Estonia",2019,78.8
+"EST","Estonia",2020,78.8
+"EST","Estonia",2021,77.2
+"EST","Estonia",2022,78.1
+"EST","Estonia",2023,78.9
+"EST","Estonia",2024,79.4
+"FIN","Finland",2015,81.4
+"FIN","Finland",2016,81.3
+"FIN","Finland",2017,81.5
+"FIN","Finland",2018,81.6
+"FIN","Finland",2019,81.9
+"FIN","Finland",2020,81.8
+"FIN","Finland",2021,81.8
+"FIN","Finland",2022,81.2
+"FIN","Finland",2023,81.6
+"FIN","Finland",2024,82.2
+"FRA","France",2015,82.1
+"FRA","France",2016,82.4
+"FRA","France",2017,82.4
+"FRA","France",2018,82.6
+"FRA","France",2019,82.7
+"FRA","France",2020,82.2
+"FRA","France",2021,82.2
+"FRA","France",2022,82.2
+"FRA","France",2023,82.9
+"FRA","France",2024,83
+"DEU","Germany",2015,80.6
+"DEU","Germany",2016,80.9
+"DEU","Germany",2017,81
+"DEU","Germany",2018,80.9
+"DEU","Germany",2019,81.2
+"DEU","Germany",2020,81
+"DEU","Germany",2021,80.7
+"DEU","Germany",2022,80.5
+"DEU","Germany",2023,80.9
+"DEU","Germany",2024,81.2
+"GRC","Greece",2015,80.8
+"GRC","Greece",2016,81
+"GRC","Greece",2017,81
+"GRC","Greece",2018,81.5
+"GRC","Greece",2019,81.4
+"GRC","Greece",2020,81.1
+"GRC","Greece",2021,80.1
+"GRC","Greece",2022,80.8
+"GRC","Greece",2023,81.7
+"GRC","Greece",2024,81.9
+"HUN","Hungary",2015,75.6
+"HUN","Hungary",2016,76.1
+"HUN","Hungary",2017,75.9
+"HUN","Hungary",2018,76
+"HUN","Hungary",2019,76.3
+"HUN","Hungary",2020,75.5
+"HUN","Hungary",2021,74.1
+"HUN","Hungary",2022,75.9
+"HUN","Hungary",2023,76.7
+"HUN","Hungary",2024,76.8
+"ISL","Iceland",2015,82.4
+"ISL","Iceland",2016,82.1
+"ISL","Iceland",2017,82.4
+"ISL","Iceland",2018,82.7
+"ISL","Iceland",2019,83
+"ISL","Iceland",2020,82.9
+"ISL","Iceland",2021,83
+"ISL","Iceland",2022,82.2
+"ISL","Iceland",2023,82.4
+"ISL","Iceland",2024,82.8
+"IND","India",2015,69.3
+"IND","India",2016,69.7
+"IND","India",2017,70.1
+"IND","India",2018,70.4
+"IND","India",2019,70.7
+"IND","India",2020,70.2
+"IND","India",2021,67.3
+"IND","India",2022,71.7
+"IND","India",2023,72
+"IND","India",2024,72.2
+"IDN","Indonesia",2015,69.5
+"IDN","Indonesia",2016,69.7
+"IDN","Indonesia",2017,70
+"IDN","Indonesia",2018,70.1
+"IDN","Indonesia",2019,70.3
+"IDN","Indonesia",2020,68.8
+"IDN","Indonesia",2021,67.5
+"IDN","Indonesia",2022,70.9
+"IDN","Indonesia",2023,71.1
+"IDN","Indonesia",2024,71.3
+"IRL","Ireland",2015,81.4
+"IRL","Ireland",2016,81.6
+"IRL","Ireland",2017,82
+"IRL","Ireland",2018,82
+"IRL","Ireland",2019,82.5
+"IRL","Ireland",2020,82.3
+"IRL","Ireland",2021,82.1
+"IRL","Ireland",2022,82.4
+"IRL","Ireland",2023,82.7
+"IRL","Ireland",2024,83.1
+"ISR","Israel",2015,82.2
+"ISR","Israel",2016,82.5
+"ISR","Israel",2017,82.7
+"ISR","Israel",2018,82.9
+"ISR","Israel",2019,82.9
+"ISR","Israel",2020,82.7
+"ISR","Israel",2021,82.6
+"ISR","Israel",2022,82.8
+"ISR","Israel",2023,83.3
+"ISR","Israel",2024,83.3
+"ITA","Italy",2015,82.4
+"ITA","Italy",2016,83
+"ITA","Italy",2017,82.8
+"ITA","Italy",2018,83.1
+"ITA","Italy",2019,83.4
+"ITA","Italy",2020,82.2
+"ITA","Italy",2021,82.6
+"ITA","Italy",2022,82.8
+"ITA","Italy",2023,83.3
+"ITA","Italy",2024,83.7
+"JPN","Japan",2015,83.9
+"JPN","Japan",2016,84.1
+"JPN","Japan",2017,84.2
+"JPN","Japan",2018,84.3
+"JPN","Japan",2019,84.4
+"JPN","Japan",2020,84.6
+"JPN","Japan",2021,84.5
+"JPN","Japan",2022,84.1
+"JPN","Japan",2023,84.1
+"JPN","Japan",2024,84.1
+"KOR","Korea",2015,82.1
+"KOR","Korea",2016,82.4
+"KOR","Korea",2017,82.7
+"KOR","Korea",2018,82.7
+"KOR","Korea",2019,83.3
+"KOR","Korea",2020,83.5
+"KOR","Korea",2021,83.6
+"KOR","Korea",2022,82.7
+"KOR","Korea",2023,83.5
+"KOR","Korea",2024,83.7
+"LVA","Latvia",2015,74.7
+"LVA","Latvia",2016,74.8
+"LVA","Latvia",2017,74.8
+"LVA","Latvia",2018,75
+"LVA","Latvia",2019,75.7
+"LVA","Latvia",2020,75.4
+"LVA","Latvia",2021,73.2
+"LVA","Latvia",2022,74.5
+"LVA","Latvia",2023,75.6
+"LVA","Latvia",2024,76.4
+"LTU","Lithuania",2015,74.4
+"LTU","Lithuania",2016,74.8
+"LTU","Lithuania",2017,75.7
+"LTU","Lithuania",2018,75.9
+"LTU","Lithuania",2019,76.4
+"LTU","Lithuania",2020,75.2
+"LTU","Lithuania",2021,74.3
+"LTU","Lithuania",2022,75.8
+"LTU","Lithuania",2023,77.4
+"LTU","Lithuania",2024,77.5
+"LUX","Luxembourg",2015,82
+"LUX","Luxembourg",2016,82.3
+"LUX","Luxembourg",2017,81.8
+"LUX","Luxembourg",2018,82.1
+"LUX","Luxembourg",2019,82.4
+"LUX","Luxembourg",2020,82.1
+"LUX","Luxembourg",2021,82.5
+"LUX","Luxembourg",2022,82.8
+"LUX","Luxembourg",2023,83.1
+"LUX","Luxembourg",2024,83.2
+"MEX","Mexico",2015,75.1
+"MEX","Mexico",2016,74.8
+"MEX","Mexico",2017,74.8
+"MEX","Mexico",2018,74.9
+"MEX","Mexico",2019,74.8
+"MEX","Mexico",2020,68.9
+"MEX","Mexico",2021,68.8
+"MEX","Mexico",2022,75.2
+"MEX","Mexico",2023,75.3
+"MEX","Mexico",2024,75.5
+"MEX","Mexico",2025,75.7
+"NLD","Netherlands",2015,81.5
+"NLD","Netherlands",2016,81.5
+"NLD","Netherlands",2017,81.7
+"NLD","Netherlands",2018,81.8
+"NLD","Netherlands",2019,82.1
+"NLD","Netherlands",2020,81.4
+"NLD","Netherlands",2021,81.3
+"NLD","Netherlands",2022,81.6
+"NLD","Netherlands",2023,81.8
+"NLD","Netherlands",2024,81.9
+"NZL","New Zealand",2015,81.5
+"NZL","New Zealand",2016,81.6
+"NZL","New Zealand",2017,81.7
+"NZL","New Zealand",2018,81.7
+"NZL","New Zealand",2019,81.7
+"NZL","New Zealand",2020,81.7
+"NZL","New Zealand",2021,81.8
+"NZL","New Zealand",2022,81.8
+"NZL","New Zealand",2023,81.8
+"NZL","New Zealand",2024,82.1
+"NOR","Norway",2015,82.3
+"NOR","Norway",2016,82.4
+"NOR","Norway",2017,82.6
+"NOR","Norway",2018,82.8
+"NOR","Norway",2019,83
+"NOR","Norway",2020,83.2
+"NOR","Norway",2021,83.2
+"NOR","Norway",2022,82.6
+"NOR","Norway",2023,83
+"NOR","Norway",2024,83.2
+"PER","Peru",2015,75.9
+"PER","Peru",2016,76.1
+"PER","Peru",2017,76.4
+"PER","Peru",2018,76.6
+"PER","Peru",2019,76.7
+"PER","Peru",2020,76.9
+"PER","Peru",2021,77
+"PER","Peru",2022,77.1
+"PER","Peru",2023,77.2
+"PER","Peru",2024,77.4
+"PER","Peru",2025,77.5
+"POL","Poland",2015,77.4
+"POL","Poland",2016,77.8
+"POL","Poland",2017,77.7
+"POL","Poland",2018,77.6
+"POL","Poland",2019,77.9
+"POL","Poland",2020,76.4
+"POL","Poland",2021,75.4
+"POL","Poland",2022,77.1
+"POL","Poland",2023,78.2
+"POL","Poland",2024,78.5
+"PRT","Portugal",2015,81.3
+"PRT","Portugal",2016,81.4
+"PRT","Portugal",2017,81.6
+"PRT","Portugal",2018,81.6
+"PRT","Portugal",2019,82
+"PRT","Portugal",2020,81.4
+"PRT","Portugal",2021,81.4
+"PRT","Portugal",2022,81.7
+"PRT","Portugal",2023,82.3
+"PRT","Portugal",2024,82.5
+"ROU","Romania",2015,74.9
+"ROU","Romania",2016,75.2
+"ROU","Romania",2017,75.2
+"ROU","Romania",2018,75.3
+"ROU","Romania",2019,75.6
+"ROU","Romania",2020,74.1
+"ROU","Romania",2021,72.8
+"ROU","Romania",2022,75.1
+"ROU","Romania",2023,76.3
+"ROU","Romania",2024,76.5
+"RUS","Russia",2015,71.2
+"RUS","Russia",2016,71.7
+"RUS","Russia",2017,72.5
+"RUS","Russia",2018,72.7
+"RUS","Russia",2019,73.1
+"RUS","Russia",2020,71.3
+"RUS","Russia",2021,69.9
+"RUS","Russia",2022,72.5
+"RUS","Russia",2023,73.3
+"SVK","Slovak Republic",2015,76.7
+"SVK","Slovak Republic",2016,77.3
+"SVK","Slovak Republic",2017,77.3
+"SVK","Slovak Republic",2018,77.3
+"SVK","Slovak Republic",2019,77.7
+"SVK","Slovak Republic",2020,77
+"SVK","Slovak Republic",2021,74.6
+"SVK","Slovak Republic",2022,77
+"SVK","Slovak Republic",2023,78.1
+"SVK","Slovak Republic",2024,78.4
+"SVN","Slovenia",2015,80.6
+"SVN","Slovenia",2016,81
+"SVN","Slovenia",2017,80.9
+"SVN","Slovenia",2018,81.2
+"SVN","Slovenia",2019,81.4
+"SVN","Slovenia",2020,80.5
+"SVN","Slovenia",2021,80.6
+"SVN","Slovenia",2022,81.2
+"SVN","Slovenia",2023,81.8
+"SVN","Slovenia",2024,82.1
+"ZAF","South Africa",2015,64.1
+"ZAF","South Africa",2016,64.7
+"ZAF","South Africa",2017,65.4
+"ZAF","South Africa",2018,65.7
+"ZAF","South Africa",2019,66.1
+"ZAF","South Africa",2020,65.2
+"ZAF","South Africa",2021,62
+"ZAF","South Africa",2022,65.5
+"ZAF","South Africa",2023,66.1
+"ZAF","South Africa",2024,66.3
+"ESP","Spain",2015,82.7
+"ESP","Spain",2016,83.1
+"ESP","Spain",2017,83
+"ESP","Spain",2018,83.1
+"ESP","Spain",2019,83.5
+"ESP","Spain",2020,82.3
+"ESP","Spain",2021,83
+"ESP","Spain",2022,83.1
+"ESP","Spain",2023,83.8
+"ESP","Spain",2024,84
+"SWE","Sweden",2015,82.2
+"SWE","Sweden",2016,82.3
+"SWE","Sweden",2017,82.4
+"SWE","Sweden",2018,82.5
+"SWE","Sweden",2019,83.1
+"SWE","Sweden",2020,82.4
+"SWE","Sweden",2021,83
+"SWE","Sweden",2022,83
+"SWE","Sweden",2023,83.2
+"SWE","Sweden",2024,83.8
+"CHE","Switzerland",2015,82.9
+"CHE","Switzerland",2016,83.4
+"CHE","Switzerland",2017,83.4
+"CHE","Switzerland",2018,83.6
+"CHE","Switzerland",2019,83.8
+"CHE","Switzerland",2020,83.1
+"CHE","Switzerland",2021,83.6
+"CHE","Switzerland",2022,83.5
+"CHE","Switzerland",2023,84.1
+"CHE","Switzerland",2024,84.2
+"THA","Thailand",2015,76.6
+"THA","Thailand",2016,76.8
+"THA","Thailand",2017,77
+"THA","Thailand",2018,77.2
+"THA","Thailand",2019,77.2
+"THA","Thailand",2020,77.3
+"THA","Thailand",2021,77.6
+"THA","Thailand",2022,75.3
+"THA","Thailand",2023,76.4
+"THA","Thailand",2024,76.6
+"TUR","Türkiye",2015,78
+"TUR","Türkiye",2016,78
+"TUR","Türkiye",2017,78.3
+"TUR","Türkiye",2018,78.6
+"TUR","Türkiye",2019,78.3
+"TUR","Türkiye",2020,77.7
+"TUR","Türkiye",2021,77.5
+"TUR","Türkiye",2022,77.3
+"TUR","Türkiye",2023,78.1
+"UKR","Ukraine",2015,72.7
+"UKR","Ukraine",2016,73.4
+"UKR","Ukraine",2017,74
+"UKR","Ukraine",2018,73.6
+"UKR","Ukraine",2019,73.9
+"UKR","Ukraine",2020,73.3
+"UKR","Ukraine",2021,71.6
+"UKR","Ukraine",2022,72.7
+"UKR","Ukraine",2023,73.4
+"UKR","Ukraine",2024,74.7
+"GBR","United Kingdom",2015,80.8
+"GBR","United Kingdom",2016,81
+"GBR","United Kingdom",2017,81.1
+"GBR","United Kingdom",2018,81
+"GBR","United Kingdom",2019,81.3
+"GBR","United Kingdom",2020,80.3
+"GBR","United Kingdom",2021,80.5
+"GBR","United Kingdom",2022,80.9
+"GBR","United Kingdom",2023,81
+"GBR","United Kingdom",2024,81.3
+"USA","United States",2015,78.7
+"USA","United States",2016,78.7
+"USA","United States",2017,78.6
+"USA","United States",2018,78.7
+"USA","United States",2019,78.8
+"USA","United States",2020,77
+"USA","United States",2021,76.4
+"USA","United States",2022,77.5
+"USA","United States",2023,78.4
+"USA","United States",2024,79
