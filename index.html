@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>OECD Health Data Visualisation</title>
+
+    <link rel="stylesheet" href="Css/style.css">
+
+    <!-- D3.js -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>OECD Health Data Explorer</h1>
+        <p>
+            Exploring health outcomes, expenditure, risk factors and
+            preventive healthcare across selected OECD countries.
+        </p>
+    </header>
+
+    <main>
+
+        <section class="visualisation-section">
+
+            <h2>Life Expectancy Trends</h2>
+
+            <p>
+                Select a country to explore changes in life expectancy
+                over time.
+            </p>
+
+            <p id="status">Loading data...</p>
+
+            <div id="chart"></div>
+
+        </section>
+
+    </main>
+
+    <script src="Js/main.js"></script>
+
+</body>
+</html>
