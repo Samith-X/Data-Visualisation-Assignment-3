@@ -1,0 +1,649 @@
+"country_code","country","indicator_code","indicator","unit_code","unit","year","value"
+"ARG","Argentina","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2010,28.3
+"ARG","Argentina","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2015,26
+"ARG","Argentina","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2018,24.7
+"ARG","Argentina","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2019,24.3
+"ARG","Argentina","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2020,23.9
+"ARG","Argentina","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2021,23.4
+"ARG","Argentina","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2022,23.1
+"AUS","Australia","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2010,15.3
+"AUS","Australia","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2013,13
+"AUS","Australia","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2016,12.4
+"AUS","Australia","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2019,11.2
+"AUS","Australia","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2022,8.5
+"AUS","Australia","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2010,15.9
+"AUS","Australia","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2013,13.7
+"AUS","Australia","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2016,13.4
+"AUS","Australia","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2019,12.9
+"AUS","Australia","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2022,13.1
+"AUT","Austria","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2014,24.3
+"AUT","Austria","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2019,20.6
+"AUT","Austria","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2014,15.6
+"AUT","Austria","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2019,15.4
+"BEL","Belgium","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2013,18.9
+"BEL","Belgium","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2018,15.4
+"BEL","Belgium","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2023,12.8
+"BEL","Belgium","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2013,15.9
+"BEL","Belgium","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2018,14.8
+"BEL","Belgium","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2023,14.1
+"BRA","Brazil","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2010,14.1
+"BRA","Brazil","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2011,13.4
+"BRA","Brazil","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2012,12.1
+"BRA","Brazil","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2013,11.3
+"BRA","Brazil","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2014,10.8
+"BRA","Brazil","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2015,10.4
+"BRA","Brazil","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2016,10.2
+"BRA","Brazil","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2017,10.1
+"BRA","Brazil","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2018,9.3
+"BRA","Brazil","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2019,9.8
+"BRA","Brazil","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2020,9.5
+"BRA","Brazil","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2021,9.1
+"BGR","Bulgaria","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2014,28.2
+"BGR","Bulgaria","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2019,29.1
+"BGR","Bulgaria","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2014,15.3
+"BGR","Bulgaria","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2019,15.2
+"CAN","Canada","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2010,16.3
+"CAN","Canada","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2011,15.7
+"CAN","Canada","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2012,16.1
+"CAN","Canada","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2013,14.9
+"CAN","Canada","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2014,14
+"CAN","Canada","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2015,13.1
+"CAN","Canada","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2016,12.5
+"CAN","Canada","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2017,12
+"CAN","Canada","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2018,11.3
+"CAN","Canada","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2019,10.3
+"CAN","Canada","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2020,9.4
+"CAN","Canada","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2021,8.7
+"CAN","Canada","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2022,9.4
+"CAN","Canada","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2023,8.7
+"CAN","Canada","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2024,8.2
+"CAN","Canada","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2010,15.1
+"CAN","Canada","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2011,14.9
+"CAN","Canada","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2012,14.8
+"CAN","Canada","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2013,14.7
+"CAN","Canada","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2014,14.8
+"CAN","Canada","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2015,14.6
+"CAN","Canada","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2016,14.7
+"CAN","Canada","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2017,14.4
+"CAN","Canada","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2018,14.2
+"CAN","Canada","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2019,14.5
+"CAN","Canada","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2020,14.1
+"CAN","Canada","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2021,13.9
+"CAN","Canada","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2022,13.4
+"CAN","Canada","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2023,12.9
+"CAN","Canada","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2024,13.3
+"CHL","Chile","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2016,24.5
+"CHL","Chile","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2020,17.6
+"CHL","Chile","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2022,16
+"CHL","Chile","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2024,15.1
+"CHL","Chile","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2016,12.7
+"CHL","Chile","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2020,11.3
+"CHL","Chile","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2022,14.7
+"CHL","Chile","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2024,15.5
+"CHN","China (People’s Republic of)","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2010,26.2
+"CHN","China (People’s Republic of)","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2015,25.8
+"CHN","China (People’s Republic of)","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2018,25.4
+"CHN","China (People’s Republic of)","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2019,25.4
+"CHN","China (People’s Republic of)","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2020,25.3
+"COL","Colombia","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2013,13
+"COL","Colombia","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2019,9.8
+"CRI","Costa Rica","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2010,14.4
+"CRI","Costa Rica","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2015,11
+"CRI","Costa Rica","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2022,7.4
+"CRI","Costa Rica","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2010,10.7
+"CRI","Costa Rica","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2015,9.9
+"CRI","Costa Rica","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2022,7
+"HRV","Croatia","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2014,25
+"HRV","Croatia","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2019,22.1
+"HRV","Croatia","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2014,16.4
+"HRV","Croatia","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2019,17.4
+"CZE","Czechia","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2010,22.8
+"CZE","Czechia","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2011,21.7
+"CZE","Czechia","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2012,22.9
+"CZE","Czechia","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2013,22.2
+"CZE","Czechia","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2014,22.3
+"CZE","Czechia","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2015,18.2
+"CZE","Czechia","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2016,19.6
+"CZE","Czechia","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2017,18.4
+"CZE","Czechia","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2018,21.1
+"CZE","Czechia","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2019,18.1
+"CZE","Czechia","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2020,16.6
+"CZE","Czechia","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2021,17.6
+"CZE","Czechia","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2022,16.2
+"CZE","Czechia","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2023,15.9
+"CZE","Czechia","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2024,16.4
+"CZE","Czechia","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2010,14.7
+"CZE","Czechia","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2011,12.3
+"CZE","Czechia","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2012,14
+"CZE","Czechia","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2013,10.9
+"CZE","Czechia","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2014,11.4
+"CZE","Czechia","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2015,11
+"CZE","Czechia","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2016,12.4
+"CZE","Czechia","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2017,12.3
+"CZE","Czechia","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2018,12.1
+"CZE","Czechia","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2019,11.2
+"CZE","Czechia","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2020,12.7
+"CZE","Czechia","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2021,10.9
+"CZE","Czechia","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2022,11.9
+"CZE","Czechia","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2023,11.9
+"CZE","Czechia","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2024,11.3
+"DNK","Denmark","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2010,20.9
+"DNK","Denmark","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2013,17
+"DNK","Denmark","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2017,16.9
+"DNK","Denmark","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2021,13.9
+"DNK","Denmark","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2023,11.7
+"DNK","Denmark","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2024,11
+"DNK","Denmark","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2017,15.1
+"EST","Estonia","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2010,26.2
+"EST","Estonia","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2012,26
+"EST","Estonia","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2014,22.1
+"EST","Estonia","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2016,21.3
+"EST","Estonia","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2018,17.2
+"EST","Estonia","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2020,17.9
+"EST","Estonia","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2022,15.9
+"EST","Estonia","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2024,13.2
+"EST","Estonia","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2010,13
+"EST","Estonia","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2012,13
+"EST","Estonia","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2014,12
+"EST","Estonia","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2016,13
+"EST","Estonia","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2018,12
+"EST","Estonia","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2020,12
+"EST","Estonia","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2022,12
+"EST","Estonia","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2024,11
+"FIN","Finland","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2010,19
+"FIN","Finland","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2011,17.8
+"FIN","Finland","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2012,17
+"FIN","Finland","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2013,15.8
+"FIN","Finland","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2014,15.4
+"FIN","Finland","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2015,16.6
+"FIN","Finland","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2016,15.4
+"FIN","Finland","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2017,13.2
+"FIN","Finland","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2018,14.1
+"FIN","Finland","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2019,13.3
+"FIN","Finland","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2020,12.4
+"FIN","Finland","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2022,11.3
+"FIN","Finland","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2024,10.2
+"FIN","Finland","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2010,14.3
+"FIN","Finland","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2011,14
+"FIN","Finland","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2012,14.3
+"FIN","Finland","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2013,13.3
+"FIN","Finland","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2014,14.1
+"FRA","France","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2010,29.7
+"FRA","France","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2014,28.5
+"FRA","France","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2015,29.4
+"FRA","France","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2016,29.4
+"FRA","France","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2017,26.9
+"FRA","France","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2018,25.4
+"FRA","France","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2019,24
+"FRA","France","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2020,25.5
+"FRA","France","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2021,25.3
+"FRA","France","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2022,24.5
+"FRA","France","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2023,23.1
+"FRA","France","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2024,18.2
+"FRA","France","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2010,14.8
+"FRA","France","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2012,13.6
+"FRA","France","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2014,13.5
+"FRA","France","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2017,13.3
+"FRA","France","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2018,13
+"FRA","France","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2019,12.5
+"FRA","France","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2020,13
+"FRA","France","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2021,12.7
+"FRA","France","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2022,12.6
+"FRA","France","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2024,12.8
+"DEU","Germany","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2013,20.9
+"DEU","Germany","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2017,18.8
+"DEU","Germany","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2021,14.6
+"DEU","Germany","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2025,14
+"DEU","Germany","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2012,15.3
+"DEU","Germany","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2014,15.3
+"DEU","Germany","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2017,15.2
+"DEU","Germany","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2020,15.4
+"DEU","Germany","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2023,15.5
+"GRC","Greece","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2014,27.3
+"GRC","Greece","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2019,24.9
+"GRC","Greece","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2014,18.8
+"GRC","Greece","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2019,17
+"HUN","Hungary","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2014,25.8
+"HUN","Hungary","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2019,24.9
+"HUN","Hungary","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2014,13.9
+"HUN","Hungary","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2019,12.2
+"ISL","Iceland","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2010,14.2
+"ISL","Iceland","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2011,14.3
+"ISL","Iceland","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2012,13.8
+"ISL","Iceland","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2013,11.4
+"ISL","Iceland","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2014,12.6
+"ISL","Iceland","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2015,10.9
+"ISL","Iceland","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2016,10.2
+"ISL","Iceland","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2017,9.4
+"ISL","Iceland","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2018,8.6
+"ISL","Iceland","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2019,8.2
+"ISL","Iceland","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2020,7.3
+"ISL","Iceland","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2021,7.2
+"ISL","Iceland","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2022,6.2
+"ISL","Iceland","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2023,5.7
+"ISL","Iceland","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2024,5.6
+"ISL","Iceland","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2025,4.9
+"IND","India","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2010,14.7
+"IND","India","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2015,10.9
+"IND","India","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2018,9.1
+"IND","India","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2019,8.6
+"IND","India","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2020,8.1
+"IDN","Indonesia","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2010,31.4
+"IDN","Indonesia","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2015,32
+"IDN","Indonesia","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2018,32.3
+"IDN","Indonesia","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2019,32.6
+"IDN","Indonesia","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2020,32.6
+"IRL","Ireland","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2015,19
+"IRL","Ireland","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2016,19
+"IRL","Ireland","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2017,18
+"IRL","Ireland","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2018,17
+"IRL","Ireland","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2019,14
+"IRL","Ireland","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2021,16
+"IRL","Ireland","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2022,14
+"IRL","Ireland","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2023,14
+"IRL","Ireland","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2024,14
+"IRL","Ireland","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2025,13
+"IRL","Ireland","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2015,14.1
+"IRL","Ireland","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2016,12
+"IRL","Ireland","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2017,14
+"IRL","Ireland","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2018,13
+"IRL","Ireland","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2019,13
+"IRL","Ireland","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2021,13.5
+"IRL","Ireland","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2022,13
+"IRL","Ireland","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2023,12.7
+"IRL","Ireland","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2024,12.5
+"IRL","Ireland","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2025,12.5
+"ISR","Israel","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2010,18.5
+"ISR","Israel","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2013,16.2
+"ISR","Israel","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2014,17.1
+"ISR","Israel","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2016,19.6
+"ISR","Israel","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2017,16.9
+"ISR","Israel","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2019,16.4
+"ISR","Israel","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2023,16.1
+"ISR","Israel","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2024,17
+"ISR","Israel","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2025,17.9
+"ISR","Israel","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2010,18.2
+"ISR","Israel","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2013,18.1
+"ISR","Israel","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2014,16.2
+"ISR","Israel","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2016,17.2
+"ISR","Israel","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2017,16.1
+"ISR","Israel","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2019,15.7
+"ISR","Israel","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2023,15.2
+"ISR","Israel","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2024,14.8
+"ISR","Israel","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2025,16.3
+"ITA","Italy","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2010,23.1
+"ITA","Italy","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2011,22.5
+"ITA","Italy","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2012,22.1
+"ITA","Italy","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2013,21.1
+"ITA","Italy","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2014,19.7
+"ITA","Italy","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2015,19.8
+"ITA","Italy","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2016,20
+"ITA","Italy","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2017,19.9
+"ITA","Italy","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2018,19.2
+"ITA","Italy","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2019,18.6
+"ITA","Italy","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2020,18.8
+"ITA","Italy","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2021,19.1
+"ITA","Italy","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2022,19.8
+"ITA","Italy","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2023,19.5
+"ITA","Italy","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2024,20
+"ITA","Italy","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2010,12.7
+"ITA","Italy","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2011,12.8
+"ITA","Italy","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2012,12.7
+"ITA","Italy","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2013,12.1
+"ITA","Italy","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2014,12.1
+"ITA","Italy","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2015,11.6
+"ITA","Italy","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2016,11.6
+"ITA","Italy","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2017,11.5
+"ITA","Italy","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2018,11.1
+"ITA","Italy","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2019,11.1
+"ITA","Italy","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2020,10.9
+"ITA","Italy","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2021,11
+"ITA","Italy","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2022,11
+"ITA","Italy","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2023,11
+"ITA","Italy","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2024,10.9
+"JPN","Japan","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2010,19.5
+"JPN","Japan","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2011,20.1
+"JPN","Japan","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2012,20.7
+"JPN","Japan","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2013,19.3
+"JPN","Japan","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2014,19.6
+"JPN","Japan","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2015,18.2
+"JPN","Japan","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2016,18.3
+"JPN","Japan","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2017,17.7
+"JPN","Japan","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2018,17.8
+"JPN","Japan","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2019,16.7
+"JPN","Japan","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2022,14.8
+"JPN","Japan","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2023,15.7
+"JPN","Japan","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2024,14.8
+"JPN","Japan","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2011,16.3
+"JPN","Japan","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2014,16.6
+"JPN","Japan","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2015,15.5
+"JPN","Japan","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2017,15.5
+"JPN","Japan","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2018,14.9
+"JPN","Japan","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2019,15.5
+"JPN","Japan","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2022,14.4
+"KOR","Korea","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2010,22.9
+"KOR","Korea","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2011,23.2
+"KOR","Korea","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2012,21.6
+"KOR","Korea","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2013,19.9
+"KOR","Korea","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2014,20
+"KOR","Korea","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2015,17.3
+"KOR","Korea","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2016,18.4
+"KOR","Korea","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2017,17.5
+"KOR","Korea","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2018,17.5
+"KOR","Korea","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2019,16.4
+"KOR","Korea","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2020,15.9
+"KOR","Korea","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2021,15.4
+"KOR","Korea","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2022,14.7
+"KOR","Korea","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2023,15.3
+"KOR","Korea","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2024,13.2
+"KOR","Korea","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2010,15.1
+"KOR","Korea","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2011,15
+"KOR","Korea","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2012,14.5
+"KOR","Korea","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2013,14.6
+"KOR","Korea","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2014,14.7
+"KOR","Korea","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2015,13.6
+"KOR","Korea","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2016,14.6
+"KOR","Korea","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2017,14.9
+"KOR","Korea","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2018,13.2
+"KOR","Korea","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2019,12.6
+"KOR","Korea","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2020,12.5
+"KOR","Korea","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2021,13
+"KOR","Korea","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2022,13
+"KOR","Korea","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2023,12.8
+"KOR","Korea","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2024,12.8
+"LVA","Latvia","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2014,24.6
+"LVA","Latvia","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2019,22.6
+"LVA","Latvia","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2010,13
+"LVA","Latvia","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2012,13.4
+"LVA","Latvia","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2014,13.6
+"LVA","Latvia","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2016,13.5
+"LVA","Latvia","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2018,11.7
+"LVA","Latvia","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2020,11.5
+"LVA","Latvia","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2022,12.6
+"LVA","Latvia","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2024,11.2
+"LTU","Lithuania","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2014,20.3
+"LTU","Lithuania","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2019,18.9
+"LUX","Luxembourg","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2010,18.3
+"LUX","Luxembourg","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2011,16.9
+"LUX","Luxembourg","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2012,16.8
+"LUX","Luxembourg","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2013,15.7
+"LUX","Luxembourg","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2014,15.3
+"LUX","Luxembourg","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2015,15
+"LUX","Luxembourg","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2016,14.9
+"LUX","Luxembourg","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2017,16
+"LUX","Luxembourg","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2018,14.5
+"LUX","Luxembourg","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2019,16.8
+"LUX","Luxembourg","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2020,16.9
+"LUX","Luxembourg","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2021,19.2
+"LUX","Luxembourg","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2022,20.3
+"LUX","Luxembourg","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2023,18.1
+"LUX","Luxembourg","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2024,15.1
+"LUX","Luxembourg","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2025,15.7
+"LUX","Luxembourg","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2014,15.2
+"LUX","Luxembourg","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2019,13.4
+"MEX","Mexico","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2011,10.3
+"MEX","Mexico","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2015,7.6
+"MEX","Mexico","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2016,6.4
+"MEX","Mexico","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2018,7.7
+"MEX","Mexico","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2020,7.4
+"MEX","Mexico","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2021,8.6
+"MEX","Mexico","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2023,8.5
+"MEX","Mexico","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2025,6.9
+"MEX","Mexico","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2011,6.6
+"MEX","Mexico","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2012,6.3
+"MEX","Mexico","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2015,7.7
+"MEX","Mexico","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2016,7.4
+"MEX","Mexico","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2018,7.1
+"MEX","Mexico","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2023,8.3
+"NLD","Netherlands","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2010,20.9
+"NLD","Netherlands","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2011,20.8
+"NLD","Netherlands","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2012,18.4
+"NLD","Netherlands","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2013,18.5
+"NLD","Netherlands","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2014,19.1
+"NLD","Netherlands","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2015,19
+"NLD","Netherlands","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2016,18
+"NLD","Netherlands","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2017,16.8
+"NLD","Netherlands","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2018,15.5
+"NLD","Netherlands","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2019,15.4
+"NLD","Netherlands","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2020,14.4
+"NLD","Netherlands","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2021,14.7
+"NLD","Netherlands","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2022,12.7
+"NLD","Netherlands","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2023,13.2
+"NLD","Netherlands","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2024,12
+"NLD","Netherlands","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2010,10.5
+"NLD","Netherlands","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2011,10.3
+"NLD","Netherlands","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2012,9.8
+"NLD","Netherlands","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2013,9.4
+"NLD","Netherlands","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2014,10.7
+"NLD","Netherlands","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2015,10.4
+"NLD","Netherlands","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2016,10.5
+"NLD","Netherlands","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2017,10.2
+"NLD","Netherlands","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2018,9.7
+"NLD","Netherlands","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2019,9.9
+"NLD","Netherlands","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2020,10.1
+"NLD","Netherlands","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2021,9.8
+"NLD","Netherlands","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2022,9.3
+"NLD","Netherlands","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2023,9.3
+"NLD","Netherlands","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2024,8.5
+"NZL","New Zealand","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2012,16.4
+"NZL","New Zealand","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2013,15.8
+"NZL","New Zealand","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2014,15.8
+"NZL","New Zealand","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2015,15.2
+"NZL","New Zealand","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2016,14.4
+"NZL","New Zealand","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2017,14.2
+"NZL","New Zealand","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2018,13.3
+"NZL","New Zealand","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2019,12.8
+"NZL","New Zealand","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2020,11.9
+"NZL","New Zealand","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2021,9.4
+"NZL","New Zealand","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2022,8.6
+"NZL","New Zealand","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2023,6.8
+"NZL","New Zealand","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2024,6.9
+"NZL","New Zealand","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2025,6.8
+"NZL","New Zealand","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2010,12.6
+"NZL","New Zealand","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2011,11.5
+"NZL","New Zealand","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2012,11.2
+"NZL","New Zealand","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2013,11.2
+"NZL","New Zealand","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2014,10.9
+"NZL","New Zealand","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2015,10.6
+"NZL","New Zealand","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2016,10.3
+"NZL","New Zealand","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2017,10.3
+"NZL","New Zealand","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2018,10
+"NZL","New Zealand","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2019,10
+"NZL","New Zealand","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2020,9.4
+"NZL","New Zealand","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2021,9.9
+"NZL","New Zealand","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2022,9.9
+"NZL","New Zealand","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2023,9.3
+"NZL","New Zealand","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2024,9.3
+"NZL","New Zealand","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2025,9.3
+"NOR","Norway","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2010,19
+"NOR","Norway","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2011,17
+"NOR","Norway","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2012,16
+"NOR","Norway","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2013,15
+"NOR","Norway","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2014,13
+"NOR","Norway","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2015,13
+"NOR","Norway","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2016,12
+"NOR","Norway","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2017,11
+"NOR","Norway","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2018,11
+"NOR","Norway","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2019,9
+"NOR","Norway","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2020,9
+"NOR","Norway","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2021,8
+"NOR","Norway","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2022,8
+"NOR","Norway","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2023,7
+"NOR","Norway","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2024,8
+"NOR","Norway","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2025,7
+"NOR","Norway","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2010,11.5
+"NOR","Norway","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2011,13.4
+"NOR","Norway","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2012,12.6
+"NOR","Norway","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2013,12.8
+"NOR","Norway","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2014,12.8
+"NOR","Norway","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2015,11.9
+"NOR","Norway","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2016,12.1
+"NOR","Norway","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2017,11.7
+"NOR","Norway","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2018,11.5
+"NOR","Norway","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2019,11.5
+"NOR","Norway","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2020,12.4
+"NOR","Norway","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2021,11.6
+"NOR","Norway","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2022,10.8
+"NOR","Norway","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2023,12
+"NOR","Norway","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2024,11
+"NOR","Norway","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2025,11
+"PER","Peru","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2014,2
+"PER","Peru","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2015,1.6
+"PER","Peru","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2016,1.6
+"PER","Peru","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2017,1.7
+"PER","Peru","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2018,1.7
+"PER","Peru","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2019,1.6
+"PER","Peru","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2020,1.2
+"PER","Peru","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2021,1.2
+"PER","Peru","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2022,1.4
+"PER","Peru","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2023,1.3
+"PER","Peru","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2024,1.3
+"PER","Peru","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2014,5.6
+"PER","Peru","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2015,5.4
+"PER","Peru","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2016,4.6
+"PER","Peru","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2017,5
+"PER","Peru","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2018,3.8
+"PER","Peru","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2019,3.8
+"PER","Peru","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2020,3.8
+"PER","Peru","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2021,3.9
+"PER","Peru","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2022,4.5
+"PER","Peru","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2023,4.9
+"PER","Peru","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2024,4.2
+"POL","Poland","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2014,22.7
+"POL","Poland","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2019,17.1
+"POL","Poland","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2014,15.5
+"POL","Poland","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2019,15.2
+"PRT","Portugal","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2014,16.8
+"PRT","Portugal","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2019,14.2
+"ROU","Romania","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2014,19.8
+"ROU","Romania","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2019,18.7
+"ROU","Romania","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2014,13
+"ROU","Romania","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2019,13.8
+"RUS","Russia","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2016,30.3
+"RUS","Russia","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2017,27.5
+"RUS","Russia","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2018,26.7
+"RUS","Russia","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2019,25.8
+"SVK","Slovak Republic","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2014,22.9
+"SVK","Slovak Republic","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2019,21
+"SVK","Slovak Republic","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2014,13
+"SVK","Slovak Republic","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2019,13
+"SVN","Slovenia","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2014,18.9
+"SVN","Slovenia","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2019,17.4
+"SVN","Slovenia","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2014,14.9
+"SVN","Slovenia","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2019,11.9
+"ZAF","South Africa","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2010,21
+"ZAF","South Africa","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2015,20.6
+"ZAF","South Africa","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2018,20.3
+"ZAF","South Africa","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2019,20.2
+"ZAF","South Africa","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2020,20.2
+"ESP","Spain","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2011,23.9
+"ESP","Spain","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2014,23
+"ESP","Spain","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2017,22.1
+"ESP","Spain","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2020,19.8
+"ESP","Spain","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2023,16.6
+"ESP","Spain","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2011,13.8
+"ESP","Spain","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2014,13.2
+"ESP","Spain","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2017,12.3
+"ESP","Spain","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2020,12
+"ESP","Spain","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2023,12
+"SWE","Sweden","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2010,13.6
+"SWE","Sweden","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2011,13.1
+"SWE","Sweden","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2012,12.8
+"SWE","Sweden","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2013,10.7
+"SWE","Sweden","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2014,11.9
+"SWE","Sweden","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2015,11.2
+"SWE","Sweden","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2016,10.9
+"SWE","Sweden","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2017,10.4
+"SWE","Sweden","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2018,10.1
+"SWE","Sweden","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2019,10.4
+"SWE","Sweden","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2020,9.5
+"SWE","Sweden","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2021,9.7
+"SWE","Sweden","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2022,8.7
+"SWE","Sweden","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2023,8.5
+"SWE","Sweden","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2024,8.5
+"SWE","Sweden","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2025,8.4
+"CHE","Switzerland","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2012,20.4
+"CHE","Switzerland","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2017,19.1
+"CHE","Switzerland","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2022,16.1
+"CHE","Switzerland","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2012,10.6
+"CHE","Switzerland","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2017,10
+"CHE","Switzerland","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2022,9.2
+"THA","Thailand","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2011,18.4
+"THA","Thailand","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2014,18.2
+"THA","Thailand","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2017,16.8
+"THA","Thailand","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2021,15.3
+"THA","Thailand","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2024,13.7
+"TUR","Türkiye","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2010,25.4
+"TUR","Türkiye","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2012,23.8
+"TUR","Türkiye","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2014,27.3
+"TUR","Türkiye","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2016,26.5
+"TUR","Türkiye","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2019,28
+"TUR","Türkiye","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2022,28.3
+"TUR","Türkiye","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2025,30.1
+"TUR","Türkiye","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2010,13.3
+"TUR","Türkiye","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2012,19.2
+"TUR","Türkiye","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2014,17.6
+"TUR","Türkiye","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2016,17.3
+"TUR","Türkiye","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2019,17.1
+"TUR","Türkiye","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2022,17.8
+"TUR","Türkiye","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2025,18.5
+"UKR","Ukraine","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2010,28.2
+"UKR","Ukraine","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2015,25.7
+"UKR","Ukraine","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2018,24.3
+"UKR","Ukraine","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2019,23.7
+"UKR","Ukraine","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2020,23.3
+"GBR","United Kingdom","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2010,20.3
+"GBR","United Kingdom","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2011,19.8
+"GBR","United Kingdom","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2012,20.4
+"GBR","United Kingdom","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2013,19.2
+"GBR","United Kingdom","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2014,18.8
+"GBR","United Kingdom","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2015,17.8
+"GBR","United Kingdom","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2016,16.1
+"GBR","United Kingdom","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2017,16.8
+"GBR","United Kingdom","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2018,16.6
+"GBR","United Kingdom","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2019,15.8
+"GBR","United Kingdom","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2020,14.5
+"GBR","United Kingdom","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2021,12.7
+"GBR","United Kingdom","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2022,11.2
+"GBR","United Kingdom","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2023,10.5
+"GBR","United Kingdom","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2024,9.1
+"GBR","United Kingdom","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2010,10
+"GBR","United Kingdom","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2011,10
+"GBR","United Kingdom","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2012,10
+"GBR","United Kingdom","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2013,10
+"GBR","United Kingdom","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2014,10
+"GBR","United Kingdom","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2015,10
+"GBR","United Kingdom","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2016,10
+"GBR","United Kingdom","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2017,10
+"GBR","United Kingdom","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2018,10
+"GBR","United Kingdom","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2019,10
+"USA","United States","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2010,15.1
+"USA","United States","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2011,14.8
+"USA","United States","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2012,14.2
+"USA","United States","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2013,13.7
+"USA","United States","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2014,12.9
+"USA","United States","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2015,11.4
+"USA","United States","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2016,11.8
+"USA","United States","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2017,10.5
+"USA","United States","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2018,10.3
+"USA","United States","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2019,10.9
+"USA","United States","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2020,9.4
+"USA","United States","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2021,8.8
+"USA","United States","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2022,8.9
+"USA","United States","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2023,8
+"USA","United States","SP_DS","Share of population who are daily smokers","PT_POP","Percentage of population",2024,7.4
+"USA","United States","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2010,15
+"USA","United States","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2011,15
+"USA","United States","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2012,14.6
+"USA","United States","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2013,14.2
+"USA","United States","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2014,13.8
+"USA","United States","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2015,14.1
+"USA","United States","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2016,14.1
+"USA","United States","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2017,13.6
+"USA","United States","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2018,13.9
+"USA","United States","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2019,13.7
+"USA","United States","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2020,13.8
+"USA","United States","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2021,13.5
+"USA","United States","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2022,13.5
+"USA","United States","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2023,13.7
+"USA","United States","TBC","Tobacco consumption","CG_SM_D","Cigarettes per smoker per day",2024,13.9
