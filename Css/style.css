@@ -1,33 +1,208 @@
+/* --------------------------------
+   PAGE
+-------------------------------- */
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+    padding: 0;
+
     background-color: #f5f5f5;
     color: #222;
 }
 
+
+/* --------------------------------
+   HEADER
+-------------------------------- */
+
 header {
-    padding: 30px;
-    text-align: center;
     background-color: white;
-    border-bottom: 1px solid #ddd;
+
+    text-align: center;
+
+    padding: 35px 20px;
+
+    border-bottom: 1px solid #dddddd;
 }
 
+
 header h1 {
-    margin-bottom: 10px;
+    margin: 0 0 15px 0;
+
+    font-size: 38px;
 }
+
+
+header p {
+    margin: 0;
+
+    font-size: 18px;
+
+    color: #444;
+}
+
+
+/* --------------------------------
+   MAIN CONTENT
+-------------------------------- */
 
 main {
     max-width: 1200px;
-    margin: 30px auto;
+
+    margin: 35px auto;
+
     padding: 0 20px;
 }
 
+
+/* --------------------------------
+   VISUALISATION CARD
+-------------------------------- */
+
 .visualisation-section {
+
     background-color: white;
-    padding: 25px;
+
+    padding: 30px;
+
     border-radius: 8px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
+
+.visualisation-section h2 {
+
+    margin-top: 0;
+
+    font-size: 28px;
+}
+
+
+.visualisation-section p {
+
+    font-size: 16px;
+
+    line-height: 1.5;
+}
+
+
+/* --------------------------------
+   CONTROLS
+-------------------------------- */
+
+.controls {
+
+    margin-top: 25px;
+
+    margin-bottom: 20px;
+}
+
+
+.controls label {
+
+    font-weight: bold;
+
+    margin-right: 10px;
+}
+
+
+#countrySelect {
+
+    padding: 8px 12px;
+
+    font-size: 16px;
+
+    border: 1px solid #cccccc;
+
+    border-radius: 5px;
+
+    background-color: white;
+
+    cursor: pointer;
+}
+
+
+#countrySelect:hover {
+
+    border-color: #777;
+}
+
+
+/* --------------------------------
+   STATUS
+-------------------------------- */
+
+#status {
+
+    color: #666;
+
+    margin-top: 15px;
+
+    margin-bottom: 10px;
+}
+
+
+/* --------------------------------
+   CHART
+-------------------------------- */
+
 #chart {
+
+    width: 100%;
+
     margin-top: 20px;
+
+    overflow-x: auto;
+}
+
+
+svg {
+
+    display: block;
+
+    margin: auto;
+}
+
+
+/* --------------------------------
+   AXES
+-------------------------------- */
+
+.axis-label {
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    fill: #333;
+}
+
+
+.chart-title {
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    fill: #222;
+}
+
+
+.tick text {
+
+    font-size: 12px;
+}
+
+
+.domain {
+
+    stroke: #555;
+}
+
+
+.tick line {
+
+    stroke: #cccccc;
 }

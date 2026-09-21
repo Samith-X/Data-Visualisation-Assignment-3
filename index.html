@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>OECD Health Data Visualisation</title>
+    <title>OECD Health Data Explorer</title>
 
+    <!-- CSS -->
     <link rel="stylesheet" href="Css/style.css">
 
-    <!-- D3.js -->
+    <!-- D3.js Version 7 -->
     <script src="https://d3js.org/d3.v7.min.js"></script>
 </head>
 
@@ -16,11 +18,13 @@
 
     <header>
         <h1>OECD Health Data Explorer</h1>
+
         <p>
             Exploring health outcomes, expenditure, risk factors and
             preventive healthcare across selected OECD countries.
         </p>
     </header>
+
 
     <main>
 
@@ -33,15 +37,36 @@
                 over time.
             </p>
 
-            <p id="status">Loading data...</p>
 
+            <!-- Country selector -->
+            <div class="controls">
+
+                <label for="countrySelect">
+                    Select Country:
+                </label>
+
+                <select id="countrySelect"></select>
+
+            </div>
+
+
+            <!-- Loading / status message -->
+            <p id="status">
+                Loading data...
+            </p>
+
+
+            <!-- D3 chart goes here -->
             <div id="chart"></div>
 
         </section>
 
     </main>
 
+
+    <!-- JavaScript -->
     <script src="Js/main.js"></script>
 
 </body>
+
 </html>
