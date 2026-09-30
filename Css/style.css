@@ -206,3 +206,112 @@ svg {
 
     stroke: #cccccc;
 }
+
+/* =========================================
+   PREVENTIVE HEALTHCARE VISUALISATION
+========================================= */
+
+.prevention-section {
+    margin-top: 35px;
+}
+
+
+.second-control {
+    margin-left: 25px;
+}
+
+
+#preventionChart {
+    width: 100%;
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+
+/* Prevention bars */
+
+.prevention-bar {
+    cursor: pointer;
+}
+
+
+/* Value shown beside each bar */
+
+.prevention-value {
+    font-size: 12px;
+    fill: #333;
+}
+
+
+/* Axis labels */
+
+.prevention-axis-label {
+    font-size: 14px;
+    font-weight: bold;
+    fill: #333;
+}
+
+
+/* Prevention chart title */
+
+.prevention-title {
+    font-size: 18px;
+    font-weight: bold;
+    fill: #222;
+}
+
+
+/* =========================================
+   TOOLTIP
+========================================= */
+
+#tooltip {
+    position: absolute;
+
+    background-color: white;
+
+    border: 1px solid #cccccc;
+
+    padding: 10px 12px;
+
+    border-radius: 6px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+
+    font-size: 14px;
+
+    line-height: 1.5;
+
+    pointer-events: none;
+
+    opacity: 0;
+
+    z-index: 1000;
+}
+
+
+/* =========================================
+   RESPONSIVE CONTROLS
+========================================= */
+
+@media (max-width: 700px) {
+
+    .controls label {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+
+    .second-control {
+        margin-left: 0;
+    }
+
+
+    #preventionIndicator,
+    #preventionYear {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+}
