@@ -315,3 +315,48 @@ svg {
     }
 
 }
+/* =========================================
+   RISK FACTORS VISUALISATION
+========================================= */
+
+.risk-section {
+    margin-top: 35px;
+}
+
+
+#riskChart {
+    width: 100%;
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+
+.risk-bar {
+    cursor: pointer;
+}
+
+
+.risk-value {
+    font-size: 12px;
+    fill: #333;
+}
+
+
+.risk-year {
+    font-size: 11px;
+    fill: #666;
+}
+
+
+.risk-axis-label {
+    font-size: 14px;
+    font-weight: bold;
+    fill: #333;
+}
+
+
+.risk-title {
+    font-size: 18px;
+    font-weight: bold;
+    fill: #222;
+}

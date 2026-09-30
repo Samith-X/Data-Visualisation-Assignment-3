@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -131,12 +132,57 @@
         </section>
 
 
+
+        <!-- ==========================================
+             VISUALISATION 3
+             RISK FACTORS
+        =========================================== -->
+
+        <section class="visualisation-section risk-section">
+
+            <h2>Risk Factors Comparison</h2>
+
+            <p>
+                Compare the latest available risk-factor observations
+                across selected OECD countries. As reporting years
+                differ between countries, the year of each observation
+                is displayed alongside its value.
+            </p>
+
+
+            <!-- Risk factor indicator selector -->
+
+            <div class="controls">
+
+                <label for="riskIndicator">
+                    Risk Indicator:
+                </label>
+
+                <select id="riskIndicator"></select>
+
+            </div>
+
+
+            <!-- Risk factor loading/status message -->
+
+            <p id="riskStatus">
+                Loading risk-factor data...
+            </p>
+
+
+            <!-- D3 Risk Factors chart -->
+
+            <div id="riskChart"></div>
+
+        </section>
+
+
     </main>
 
 
 
     <!-- ==========================================
-         TOOLTIP
+         SHARED TOOLTIP
     =========================================== -->
 
     <div id="tooltip"></div>
@@ -144,14 +190,17 @@
 
 
     <!-- ==========================================
-         JAVASCRIPT
+         JAVASCRIPT FILES
     =========================================== -->
 
-    <!-- Existing Life Expectancy visualisation -->
+    <!-- Visualisation 1: Life Expectancy -->
     <script src="Js/main.js"></script>
 
-    <!-- New Prevention visualisation -->
+    <!-- Visualisation 2: Preventive Healthcare -->
     <script src="Js/prevention-samith.js"></script>
+
+    <!-- Visualisation 3: Risk Factors -->
+    <script src="Js/riskFactors-samith.js"></script>
 
 
 </body>
