@@ -1,593 +1,586 @@
-// ======================================================
-// PREVENTIVE HEALTHCARE COMPARISON
-// COS30045 Data Visualisation
-// ======================================================
-
-
-// ------------------------------------------------------
-// LOAD DATA
-// ------------------------------------------------------
+// --------------------------------------------------
+// Prevention & Risk Factors Visualisation
+// D3 v7
 //
-// We load:
-// 1. Healthcare Prevention dataset
-// 2. Health Expenditure dataset
-//
-// The expenditure dataset is used only to identify
-// the 14 common/core countries used by the project.
-//
-// ------------------------------------------------------
+// Required HTML:
+// <div id="preventionChart"></div>
+// --------------------------------------------------
 
 Promise.all([
-
-    d3.csv(
-        "Data/Processed/healthcare_prevention_clean.csv",
-        d3.autoType
-    ),
-
-    d3.csv(
-        "Data/Processed/health_expenditure_clean.csv",
-        d3.autoType
-    )
-
+    d3.csv("Data/Processed/risk_factors_clean.csv", d3.autoType),
+    d3.csv("Data/Processed/healthcare_prevention_clean.csv", d3.autoType)
 ])
-.then(function([preventionData, expenditureData]) {
+.then(function ([riskData, preventionData]) {
 
+    console.log("Risk factors loaded:", riskData.length);
+    console.log("Healthcare prevention loaded:", preventionData.length);
 
-    console.log(
-        "Prevention dataset loaded successfully."
-    );
+    // -----------------------------------------------
+    // PREPARE DATA
+    // -----------------------------------------------
 
-    console.log(
-        "Number of prevention records:",
-        preventionData.length
-    );
+    riskData.forEach(function (d) {
+        d.dataset = "Risk factors";
+    });
 
-    console.log(
-        preventionData.slice(0, 5)
-    );
+    preventionData.forEach(function (d) {
+        d.dataset = "Healthcare prevention";
+    });
 
-
-    // --------------------------------------------------
-    // FIND THE 14 CORE COUNTRIES
-    // --------------------------------------------------
-
-    const coreCountryCodes =
-        new Set(
-            expenditureData.map(function(d) {
-                return d.country_code;
-            })
-        );
-
-
-    console.log(
-        "Core countries:",
-        coreCountryCodes
-    );
-
-
-    // Only keep prevention records
-    // belonging to our core comparison countries.
-
-    const data =
-        preventionData.filter(function(d) {
-
-            return coreCountryCodes.has(
-                d.country_code
-            );
-
+    const allData = riskData
+        .concat(preventionData)
+        .filter(function (d) {
+            return d.country &&
+                d.indicator &&
+                Number.isFinite(+d.year) &&
+                Number.isFinite(+d.value);
         });
 
 
-    console.log(
-        "Prevention records for core countries:",
-        data.length
-    );
+    // -----------------------------------------------
+    // FIND CHART CONTAINER
+    // -----------------------------------------------
 
+    const container = d3.select("#preventionChart");
 
-    // --------------------------------------------------
-    // STATUS MESSAGE
-    // --------------------------------------------------
-
-    d3.select("#preventionStatus")
-        .text(
-            "Prevention dataset loaded successfully. "
-            + data.length
-            + " records available for the core OECD countries."
+    if (container.empty()) {
+        console.error(
+            'Could not find <div id="preventionChart"></div>'
         );
 
+        return;
+    }
 
-    // --------------------------------------------------
-    // GET INDICATORS
-    // --------------------------------------------------
-
-    const indicators =
-        Array.from(
-            new Set(
-                data.map(function(d) {
-                    return d.indicator;
-                })
-            )
-        )
-        .sort();
+    container.selectAll("*").remove();
 
 
-    console.log(
-        "Prevention indicators:",
-        indicators
-    );
+    // -----------------------------------------------
+    // CONTROLS
+    // -----------------------------------------------
+
+    const controls = container
+        .append("div")
+        .attr("class", "prevention-controls");
 
 
-    // --------------------------------------------------
-    // INDICATOR DROPDOWN
-    // --------------------------------------------------
+    // Dataset selector
 
-    const indicatorDropdown =
-        d3.select("#preventionIndicator");
+    controls
+        .append("label")
+        .attr("for", "preventionDatasetSelect")
+        .text("Dataset: ");
 
+    const datasetSelect = controls
+        .append("select")
+        .attr("id", "preventionDatasetSelect");
 
-    indicatorDropdown
+    datasetSelect
         .selectAll("option")
-
-        .data(indicators)
-
+        .data([
+            "Risk factors",
+            "Healthcare prevention"
+        ])
         .enter()
-
         .append("option")
+        .attr("value", function (d) {
+            return d;
+        })
+        .text(function (d) {
+            return d;
+        });
 
-        .attr(
-            "value",
-            function(d) {
-                return d;
-            }
-        )
 
+    controls.append("span").text("  ");
+
+
+    // Indicator selector
+
+    controls
+        .append("label")
+        .attr("for", "preventionIndicatorSelect")
+        .text("Indicator: ");
+
+    const indicatorSelect = controls
+        .append("select")
+        .attr("id", "preventionIndicatorSelect");
+
+
+    controls.append("span").text("  ");
+
+
+    // Year selector
+
+    controls
+        .append("label")
+        .attr("for", "preventionYearSelect")
+        .text("Year: ");
+
+    const yearSelect = controls
+        .append("select")
+        .attr("id", "preventionYearSelect");
+
+
+    // Status text
+
+    container
+        .append("p")
+        .attr("id", "preventionStatus")
         .text(
-            function(d) {
-                return d;
-            }
+            "Datasets loaded successfully: " +
+            allData.length +
+            " records."
         );
 
 
-    // --------------------------------------------------
-    // DEFAULT INDICATOR
-    // --------------------------------------------------
+    // -----------------------------------------------
+    // CHART DIMENSIONS
+    // -----------------------------------------------
 
-    let defaultIndicator;
+    const margin = {
+        top: 75,
+        right: 70,
+        bottom: 65,
+        left: 190
+    };
+
+    const width = 950;
+    const height = 560;
+
+    const innerWidth =
+        width - margin.left - margin.right;
+
+    const innerHeight =
+        height - margin.top - margin.bottom;
 
 
-    if (
-        indicators.includes("Measles")
-    ) {
+    // -----------------------------------------------
+    // SVG
+    // -----------------------------------------------
 
-        defaultIndicator =
-            "Measles";
+    const svg = container
+        .append("svg")
+        .attr("width", width)
+        .attr("height", height)
+        .attr(
+            "viewBox",
+            "0 0 " + width + " " + height
+        )
+        .style("max-width", "100%")
+        .style("height", "auto");
 
-    } else {
 
-        defaultIndicator =
-            indicators[0];
+    const chartArea = svg
+        .append("g")
+        .attr(
+            "transform",
+            "translate(" +
+            margin.left +
+            "," +
+            margin.top +
+            ")"
+        );
 
+
+    // -----------------------------------------------
+    // SCALES
+    // -----------------------------------------------
+
+    const xScale = d3
+        .scaleLinear()
+        .range([0, innerWidth]);
+
+
+    const yScale = d3
+        .scaleBand()
+        .range([0, innerHeight])
+        .padding(0.18);
+
+
+    // -----------------------------------------------
+    // AXES
+    // -----------------------------------------------
+
+    const xAxisGroup = chartArea
+        .append("g")
+        .attr(
+            "transform",
+            "translate(0," +
+            innerHeight +
+            ")"
+        );
+
+
+    const yAxisGroup = chartArea
+        .append("g");
+
+
+    // Gridlines
+
+    const gridGroup = chartArea
+        .append("g")
+        .attr("class", "grid");
+
+
+    // -----------------------------------------------
+    // TITLE
+    // -----------------------------------------------
+
+    const title = svg
+        .append("text")
+        .attr("x", width / 2)
+        .attr("y", 28)
+        .attr("text-anchor", "middle")
+        .style("font-size", "20px")
+        .style("font-weight", "bold");
+
+
+    const subtitle = svg
+        .append("text")
+        .attr("x", width / 2)
+        .attr("y", 51)
+        .attr("text-anchor", "middle")
+        .style("font-size", "13px");
+
+
+    // X-axis label
+
+    const xAxisLabel = svg
+        .append("text")
+        .attr(
+            "x",
+            margin.left +
+            innerWidth / 2
+        )
+        .attr("y", height - 12)
+        .attr("text-anchor", "middle")
+        .style("font-size", "14px");
+
+
+    // -----------------------------------------------
+    // TOOLTIP
+    // -----------------------------------------------
+
+    const tooltip = d3
+        .select("body")
+        .append("div")
+        .attr(
+            "class",
+            "prevention-tooltip"
+        )
+        .style("position", "absolute")
+        .style("visibility", "hidden")
+        .style("background", "white")
+        .style(
+            "border",
+            "1px solid #999"
+        )
+        .style(
+            "border-radius",
+            "4px"
+        )
+        .style(
+            "padding",
+            "8px 10px"
+        )
+        .style(
+            "font-size",
+            "13px"
+        )
+        .style(
+            "pointer-events",
+            "none"
+        )
+        .style(
+            "box-shadow",
+            "0 2px 6px rgba(0,0,0,0.15)"
+        );
+
+
+    // -----------------------------------------------
+    // GET CURRENT DATASET
+    // -----------------------------------------------
+
+    function getDatasetRows() {
+
+        const selectedDataset =
+            datasetSelect.property("value");
+
+        return allData.filter(
+            function (d) {
+
+                return d.dataset ===
+                    selectedDataset;
+
+            }
+        );
     }
 
 
-    indicatorDropdown
-        .property(
-            "value",
-            defaultIndicator
-        );
+    // -----------------------------------------------
+    // UPDATE INDICATORS
+    // -----------------------------------------------
+
+    function updateIndicatorOptions() {
+
+        const rows =
+            getDatasetRows();
 
 
-    // --------------------------------------------------
-    // YEAR DROPDOWN
-    // --------------------------------------------------
-
-    const yearDropdown =
-        d3.select("#preventionYear");
-
-
-    function updateYearDropdown(
-        selectedIndicator
-    ) {
-
-
-        // Get years available for
-        // the selected indicator
-
-        const years =
+        const indicators =
             Array.from(
                 new Set(
-
-                    data
-
-                        .filter(
-                            function(d) {
-
-                                return (
-                                    d.indicator
-                                    ===
-                                    selectedIndicator
-                                );
-
-                            }
-                        )
-
-                        .map(
-                            function(d) {
-
-                                return d.year;
-
-                            }
-                        )
-
+                    rows.map(
+                        function (d) {
+                            return d.indicator;
+                        }
+                    )
                 )
-            )
-
-            .sort(
-                function(a, b) {
-
-                    return d3.descending(
-                        a,
-                        b
-                    );
-
-                }
-            );
+            ).sort();
 
 
-        // Remove previous options
-
-        yearDropdown
+        indicatorSelect
             .selectAll("option")
             .remove();
 
 
-        // Add new options
-
-        yearDropdown
+        indicatorSelect
             .selectAll("option")
-
-            .data(years)
-
+            .data(indicators)
             .enter()
-
             .append("option")
-
             .attr(
                 "value",
-                function(d) {
-
+                function (d) {
                     return d;
-
                 }
             )
-
             .text(
-                function(d) {
-
+                function (d) {
                     return d;
-
                 }
             );
 
 
-        // Use latest year by default
+        // Try to start with a useful
+        // risk factor automatically
 
-        const latestYear =
-            years[0];
-
-
-        yearDropdown
-            .property(
-                "value",
-                latestYear
-            );
+        const preferredIndicators = [
+            "smoking",
+            "obesity",
+            "overweight",
+            "alcohol"
+        ];
 
 
-        return latestYear;
-
-    }
-
+        let defaultIndicator =
+            indicators[0];
 
 
-    // Initial year
+        if (
+            datasetSelect.property("value") ===
+            "Risk factors"
+        ) {
 
-    let selectedYear =
-        updateYearDropdown(
+            for (
+                const preferred
+                of preferredIndicators
+            ) {
+
+                const match =
+                    indicators.find(
+                        function (indicator) {
+
+                            return indicator
+                                .toLowerCase()
+                                .includes(
+                                    preferred
+                                );
+
+                        }
+                    );
+
+
+                if (match) {
+
+                    defaultIndicator =
+                        match;
+
+                    break;
+                }
+            }
+        }
+
+
+        indicatorSelect.property(
+            "value",
             defaultIndicator
         );
 
 
-
-    // ==================================================
-    // CHART SETUP
-    // ==================================================
+        updateYearOptions();
+    }
 
 
-    const margin = {
+    // -----------------------------------------------
+    // UPDATE YEARS
+    // -----------------------------------------------
 
-        top: 70,
+    function updateYearOptions() {
 
-        right: 100,
-
-        bottom: 70,
-
-        left: 180
-
-    };
-
-
-    const width = 950;
-
-    const height = 650;
-
-
-    const innerWidth =
-        width
-        - margin.left
-        - margin.right;
-
-
-    const innerHeight =
-        height
-        - margin.top
-        - margin.bottom;
-
-
-
-    // --------------------------------------------------
-    // CREATE SVG
-    // --------------------------------------------------
-
-    const svg =
-        d3.select(
-            "#preventionChart"
-        )
-
-        .append("svg")
-
-        .attr(
-            "width",
-            width
-        )
-
-        .attr(
-            "height",
-            height
-        );
-
-
-
-    // --------------------------------------------------
-    // MAIN CHART AREA
-    // --------------------------------------------------
-
-    const chartArea =
-        svg.append("g")
-
-        .attr(
-            "transform",
-            `translate(
-                ${margin.left},
-                ${margin.top}
-            )`
-        );
-
-
-
-    // --------------------------------------------------
-    // SCALES
-    // --------------------------------------------------
-
-    const xScale =
-        d3.scaleLinear()
-
-        .range([
-            0,
-            innerWidth
-        ]);
-
-
-    const yScale =
-        d3.scaleBand()
-
-        .range([
-            0,
-            innerHeight
-        ])
-
-        .padding(0.2);
-
-
-
-    // --------------------------------------------------
-    // AXIS GROUPS
-    // --------------------------------------------------
-
-    const xAxisGroup =
-        chartArea
-            .append("g")
-
-            .attr(
-                "transform",
-                `translate(
-                    0,
-                    ${innerHeight}
-                )`
+        const indicator =
+            indicatorSelect.property(
+                "value"
             );
 
 
-    const yAxisGroup =
-        chartArea
-            .append("g");
+        const rows =
+            getDatasetRows()
+                .filter(
+                    function (d) {
+
+                        return d.indicator ===
+                            indicator;
+
+                    }
+                );
 
 
-
-    // --------------------------------------------------
-    // X AXIS LABEL
-    // --------------------------------------------------
-
-    const xAxisLabel =
-        chartArea
-
-        .append("text")
-
-        .attr(
-            "class",
-            "prevention-axis-label"
-        )
-
-        .attr(
-            "x",
-            innerWidth / 2
-        )
-
-        .attr(
-            "y",
-            innerHeight + 55
-        )
-
-        .attr(
-            "text-anchor",
-            "middle"
-        );
+        const years =
+            Array.from(
+                new Set(
+                    rows.map(
+                        function (d) {
+                            return +d.year;
+                        }
+                    )
+                )
+            )
+            .sort(
+                function (a, b) {
+                    return b - a;
+                }
+            );
 
 
-
-    // --------------------------------------------------
-    // CHART TITLE
-    // --------------------------------------------------
-
-    const chartTitle =
-        chartArea
-
-        .append("text")
-
-        .attr(
-            "class",
-            "prevention-title"
-        )
-
-        .attr(
-            "x",
-            innerWidth / 2
-        )
-
-        .attr(
-            "y",
-            -35
-        )
-
-        .attr(
-            "text-anchor",
-            "middle"
-        );
+        yearSelect
+            .selectAll("option")
+            .remove();
 
 
-
-    // ==================================================
-    // UPDATE CHART FUNCTION
-    // ==================================================
-
-    function updatePreventionChart(
-        selectedIndicator,
-        year
-    ) {
-
-
-        console.log(
-            "Selected prevention indicator:",
-            selectedIndicator
-        );
-
-
-        console.log(
-            "Selected year:",
-            year
-        );
+        yearSelect
+            .selectAll("option")
+            .data(years)
+            .enter()
+            .append("option")
+            .attr(
+                "value",
+                function (d) {
+                    return d;
+                }
+            )
+            .text(
+                function (d) {
+                    return d;
+                }
+            );
 
 
-        // --------------------------------------------------
-        // FILTER DATA
-        // --------------------------------------------------
+        // Use latest available year
 
-        let filteredData =
-            data.filter(
-                function(d) {
+        if (years.length > 0) {
+
+            yearSelect.property(
+                "value",
+                years[0]
+            );
+        }
+
+
+        updateChart();
+    }
+
+
+    // -----------------------------------------------
+    // UPDATE CHART
+    // -----------------------------------------------
+
+    function updateChart() {
+
+        const selectedDataset =
+            datasetSelect.property(
+                "value"
+            );
+
+
+        const selectedIndicator =
+            indicatorSelect.property(
+                "value"
+            );
+
+
+        const selectedYear =
+            +yearSelect.property(
+                "value"
+            );
+
+
+        // Filter selected indicator/year
+
+        let filtered =
+            allData.filter(
+                function (d) {
 
                     return (
+                        d.dataset ===
+                            selectedDataset &&
 
-                        d.indicator
-                        ===
-                        selectedIndicator
+                        d.indicator ===
+                            selectedIndicator &&
 
-                        &&
-
-                        d.year
-                        ===
-                        year
-
+                        +d.year ===
+                            selectedYear
                     );
 
                 }
             );
 
 
+        // -------------------------------------------
+        // ONE VALUE PER COUNTRY
+        // -------------------------------------------
 
-        // --------------------------------------------------
-        // HANDLE POSSIBLE DUPLICATES
-        // --------------------------------------------------
-        //
-        // If the same country has more than one row
-        // for the same indicator/year, use the mean
-        // rather than drawing duplicate bars.
-        //
-        // --------------------------------------------------
-
-        filteredData =
+        filtered =
             Array.from(
 
                 d3.rollup(
 
-                    filteredData,
+                    filtered,
 
-                    function(values) {
+                    function (values) {
 
                         return {
-
-                            country_code:
-                                values[0]
-                                    .country_code,
 
                             country:
                                 values[0]
                                     .country,
 
-                            indicator:
-                                values[0]
-                                    .indicator,
-
-                            unit:
-                                values[0]
-                                    .unit,
-
-                            year:
-                                values[0]
-                                    .year,
-
                             value:
                                 d3.mean(
                                     values,
-                                    function(d) {
-                                        return d.value;
+                                    function (d) {
+                                        return +d.value;
                                     }
-                                )
+                                ),
 
+                            unit:
+                                values[0]
+                                    .unit
                         };
 
                     },
 
-                    function(d) {
-                        return d.country_code;
+                    function (d) {
+                        return d.country;
                     }
 
                 ).values()
@@ -595,13 +588,10 @@ Promise.all([
             );
 
 
+        // Highest value first
 
-        // --------------------------------------------------
-        // SORT HIGHEST TO LOWEST
-        // --------------------------------------------------
-
-        filteredData.sort(
-            function(a, b) {
+        filtered.sort(
+            function (a, b) {
 
                 return d3.descending(
                     a.value,
@@ -612,115 +602,148 @@ Promise.all([
         );
 
 
-        console.log(
-            "Filtered prevention data:",
-            filteredData
-        );
+        // -------------------------------------------
+        // LIMIT NUMBER OF COUNTRIES
+        // -------------------------------------------
+
+        let displayData =
+            filtered.slice(0, 15);
 
 
+        // Always include Australia
+        // if it exists in the data
 
-        // --------------------------------------------------
-        // HANDLE NO DATA
-        // --------------------------------------------------
+        const australia =
+            filtered.find(
+                function (d) {
 
-        if (
-            filteredData.length === 0
-        ) {
-
-            d3.select(
-                "#preventionStatus"
-            )
-            .text(
-                "No data available for this indicator and year."
-            );
-
-            return;
-
-        }
-
-
-        d3.select(
-            "#preventionStatus"
-        )
-        .text(
-            "Showing "
-            + filteredData.length
-            + " countries for "
-            + selectedIndicator
-            + " in "
-            + year
-            + "."
-        );
-
-
-
-        // --------------------------------------------------
-        // UPDATE X SCALE
-        // --------------------------------------------------
-
-        const maxValue =
-            d3.max(
-                filteredData,
-                function(d) {
-
-                    return d.value;
+                    return (
+                        d.country ===
+                        "Australia"
+                    );
 
                 }
             );
 
 
-        xScale
-            .domain([
-                0,
-                maxValue
-            ])
+        if (
+            australia &&
+            !displayData.some(
+                function (d) {
 
-            .nice();
+                    return (
+                        d.country ===
+                        "Australia"
+                    );
+
+                }
+            )
+        ) {
+
+            displayData.push(
+                australia
+            );
+        }
 
 
+        displayData.sort(
+            function (a, b) {
 
-        // --------------------------------------------------
-        // UPDATE Y SCALE
-        // --------------------------------------------------
+                return d3.descending(
+                    a.value,
+                    b.value
+                );
 
-        yScale
-            .domain(
+            }
+        );
 
-                filteredData.map(
-                    function(d) {
 
-                        return d.country;
+        // -------------------------------------------
+        // NO DATA
+        // -------------------------------------------
 
-                    }
+        if (
+            displayData.length === 0
+        ) {
+
+            chartArea
+                .selectAll(".bar")
+                .remove();
+
+
+            chartArea
+                .selectAll(
+                    ".value-label"
                 )
+                .remove();
 
+
+            title.text(
+                selectedIndicator ||
+                "Prevention and Risk Factors"
             );
 
 
+            subtitle.text(
+                "No data available for the selected year."
+            );
 
-        // --------------------------------------------------
+
+            return;
+        }
+
+
+        // -------------------------------------------
+        // UNIT
+        // -------------------------------------------
+
+        const unit =
+            displayData[0].unit || "";
+
+
+        // -------------------------------------------
+        // UPDATE SCALES
+        // -------------------------------------------
+
+        xScale.domain([
+            0,
+
+            d3.max(
+                displayData,
+                function (d) {
+                    return d.value;
+                }
+            ) * 1.08
+        ]);
+
+
+        yScale.domain(
+            displayData.map(
+                function (d) {
+                    return d.country;
+                }
+            )
+        );
+
+
+        // -------------------------------------------
         // UPDATE AXES
-        // --------------------------------------------------
+        // -------------------------------------------
 
         xAxisGroup
-
             .transition()
-
             .duration(600)
-
             .call(
                 d3.axisBottom(
                     xScale
                 )
+                .ticks(7)
             );
 
 
         yAxisGroup
-
             .transition()
-
             .duration(600)
-
             .call(
                 d3.axisLeft(
                     yScale
@@ -728,624 +751,468 @@ Promise.all([
             );
 
 
+        // -------------------------------------------
+        // GRIDLINES
+        // -------------------------------------------
 
-        // --------------------------------------------------
-        // UPDATE AXIS LABEL
-        // --------------------------------------------------
+        gridGroup
+            .attr(
+                "transform",
+                "translate(0," +
+                innerHeight +
+                ")"
+            )
+            .transition()
+            .duration(600)
+            .call(
 
-        const unit =
-            filteredData[0].unit;
+                d3.axisBottom(
+                    xScale
+                )
+                .ticks(7)
+                .tickSize(
+                    -innerHeight
+                )
+                .tickFormat("")
+
+            );
 
 
-        xAxisLabel.text(
-            unit
-        );
+        gridGroup
+            .select(".domain")
+            .remove();
 
 
+        gridGroup
+            .selectAll("line")
+            .attr(
+                "stroke-opacity",
+                0.12
+            );
 
-        // --------------------------------------------------
+
+        // -------------------------------------------
         // UPDATE TITLE
-        // --------------------------------------------------
+        // -------------------------------------------
 
-        chartTitle.text(
+        title.text(
             selectedIndicator
-            + " — "
-            + year
         );
 
 
+        subtitle.text(
+            selectedYear +
+            " — Australia compared with OECD countries"
+        );
 
-        // ==================================================
+
+        xAxisLabel.text(unit);
+
+
+        // -------------------------------------------
         // BARS
-        // ==================================================
+        // -------------------------------------------
 
         const bars =
             chartArea
+                .selectAll(".bar")
+                .data(
 
-            .selectAll(
-                ".prevention-bar"
-            )
+                    displayData,
 
-            .data(
-                filteredData,
-                function(d) {
+                    function (d) {
+                        return d.country;
+                    }
 
-                    return d.country_code;
-
-                }
-            );
-
-
-
-        bars.join(
-
-
-            // ----------------------------------------------
-            // ENTER
-            // ----------------------------------------------
-
-            function(enter) {
-
-                return enter
-
-                    .append("rect")
-
-                    .attr(
-                        "class",
-                        "prevention-bar"
-                    )
-
-                    .attr(
-                        "x",
-                        0
-                    )
-
-                    .attr(
-                        "y",
-                        function(d) {
-
-                            return yScale(
-                                d.country
-                            );
-
-                        }
-                    )
-
-                    .attr(
-                        "height",
-                        yScale.bandwidth()
-                    )
-
-                    .attr(
-                        "width",
-                        0
-                    )
-
-                    .attr(
-                        "fill",
-                        function(d) {
-
-                            if (
-                                d.country
-                                ===
-                                "Australia"
-                            ) {
-
-                                return "darkorange";
-
-                            }
-
-                            return "steelblue";
-
-                        }
-                    )
-
-
-                    // --------------------------------------
-                    // TOOLTIP
-                    // --------------------------------------
-
-                    .on(
-                        "mouseover",
-                        function(event, d) {
-
-
-                            d3.select(this)
-
-                                .attr(
-                                    "opacity",
-                                    0.75
-                                );
-
-
-                            d3.select(
-                                "#tooltip"
-                            )
-
-                            .style(
-                                "opacity",
-                                1
-                            )
-
-                            .html(
-
-                                "<strong>"
-                                + d.country
-                                + "</strong>"
-
-                                + "<br>"
-
-                                + d.indicator
-
-                                + "<br>Year: "
-                                + d.year
-
-                                + "<br>Value: "
-                                + d.value.toFixed(1)
-
-                                + "<br>"
-                                + d.unit
-
-                            );
-
-                        }
-                    )
-
-
-                    .on(
-                        "mousemove",
-                        function(event) {
-
-                            d3.select(
-                                "#tooltip"
-                            )
-
-                            .style(
-                                "left",
-                                (
-                                    event.pageX
-                                    + 15
-                                )
-                                + "px"
-                            )
-
-                            .style(
-                                "top",
-                                (
-                                    event.pageY
-                                    - 25
-                                )
-                                + "px"
-                            );
-
-                        }
-                    )
-
-
-                    .on(
-                        "mouseout",
-                        function() {
-
-
-                            d3.select(this)
-
-                                .attr(
-                                    "opacity",
-                                    1
-                                );
-
-
-                            d3.select(
-                                "#tooltip"
-                            )
-
-                            .style(
-                                "opacity",
-                                0
-                            );
-
-                        }
-                    )
-
-
-                    // --------------------------------------
-                    // ANIMATION
-                    // --------------------------------------
-
-                    .call(
-                        function(enter) {
-
-                            enter
-
-                                .transition()
-
-                                .duration(700)
-
-                                .attr(
-                                    "width",
-                                    function(d) {
-
-                                        return xScale(
-                                            d.value
-                                        );
-
-                                    }
-                                );
-
-                        }
-                    );
-
-            },
-
-
-
-            // ----------------------------------------------
-            // UPDATE
-            // ----------------------------------------------
-
-            function(update) {
-
-                return update
-
-                    .attr(
-                        "fill",
-                        function(d) {
-
-                            if (
-                                d.country
-                                ===
-                                "Australia"
-                            ) {
-
-                                return "darkorange";
-
-                            }
-
-                            return "steelblue";
-
-                        }
-                    )
-
-                    .call(
-                        function(update) {
-
-                            update
-
-                                .transition()
-
-                                .duration(700)
-
-                                .attr(
-                                    "y",
-                                    function(d) {
-
-                                        return yScale(
-                                            d.country
-                                        );
-
-                                    }
-                                )
-
-                                .attr(
-                                    "height",
-                                    yScale.bandwidth()
-                                )
-
-                                .attr(
-                                    "width",
-                                    function(d) {
-
-                                        return xScale(
-                                            d.value
-                                        );
-
-                                    }
-                                );
-
-                        }
-                    );
-
-            },
-
-
-
-            // ----------------------------------------------
-            // EXIT
-            // ----------------------------------------------
-
-            function(exit) {
-
-                return exit
-
-                    .transition()
-
-                    .duration(400)
-
-                    .attr(
-                        "width",
-                        0
-                    )
-
-                    .remove();
-
-            }
-
-        );
-
-
-
-        // ==================================================
-        // VALUE LABELS
-        // ==================================================
-
-        const labels =
-            chartArea
-
-            .selectAll(
-                ".prevention-value"
-            )
-
-            .data(
-                filteredData,
-                function(d) {
-
-                    return d.country_code;
-
-                }
-            );
-
-
-
-        labels.join(
-
-
-            // ENTER
-
-            function(enter) {
-
-                return enter
-
-                    .append("text")
-
-                    .attr(
-                        "class",
-                        "prevention-value"
-                    )
-
-                    .attr(
-                        "x",
-                        5
-                    )
-
-                    .attr(
-                        "y",
-                        function(d) {
-
-                            return (
-                                yScale(
-                                    d.country
-                                )
-
-                                +
-
-                                yScale.bandwidth()
-                                / 2
-
-                                + 4
-                            );
-
-                        }
-                    )
-
-                    .text(
-                        function(d) {
-
-                            return d.value
-                                .toFixed(1);
-
-                        }
-                    )
-
-                    .call(
-                        function(enter) {
-
-                            enter
-
-                                .transition()
-
-                                .duration(700)
-
-                                .attr(
-                                    "x",
-                                    function(d) {
-
-                                        return (
-                                            xScale(
-                                                d.value
-                                            )
-                                            + 6
-                                        );
-
-                                    }
-                                );
-
-                        }
-                    );
-
-            },
-
-
-            // UPDATE
-
-            function(update) {
-
-                return update
-
-                    .text(
-                        function(d) {
-
-                            return d.value
-                                .toFixed(1);
-
-                        }
-                    )
-
-                    .call(
-                        function(update) {
-
-                            update
-
-                                .transition()
-
-                                .duration(700)
-
-                                .attr(
-                                    "x",
-                                    function(d) {
-
-                                        return (
-                                            xScale(
-                                                d.value
-                                            )
-                                            + 6
-                                        );
-
-                                    }
-                                )
-
-                                .attr(
-                                    "y",
-                                    function(d) {
-
-                                        return (
-                                            yScale(
-                                                d.country
-                                            )
-
-                                            +
-
-                                            yScale
-                                                .bandwidth()
-                                            / 2
-
-                                            + 4
-                                        );
-
-                                    }
-                                );
-
-                        }
-                    );
-
-            },
-
-
-            // EXIT
-
-            function(exit) {
-
-                return exit
-
-                    .remove();
-
-            }
-
-        );
-
-    }
-
-
-
-    // ==================================================
-    // INITIAL CHART
-    // ==================================================
-
-    updatePreventionChart(
-        defaultIndicator,
-        selectedYear
-    );
-
-
-
-    // ==================================================
-    // INDICATOR EVENT
-    // ==================================================
-
-    indicatorDropdown.on(
-        "change",
-        function() {
-
-
-            const selectedIndicator =
-                d3.select(this)
-                    .property(
-                        "value"
-                    );
-
-
-            selectedYear =
-                updateYearDropdown(
-                    selectedIndicator
                 );
 
 
-            updatePreventionChart(
-                selectedIndicator,
-                selectedYear
+        // Remove old bars
+
+        bars.exit()
+            .transition()
+            .duration(400)
+            .attr("width", 0)
+            .remove();
+
+
+        // Add new bars
+
+        const barsEnter =
+            bars.enter()
+                .append("rect")
+                .attr(
+                    "class",
+                    "bar"
+                )
+                .attr("x", 0)
+                .attr(
+                    "y",
+                    function (d) {
+
+                        return yScale(
+                            d.country
+                        );
+
+                    }
+                )
+                .attr(
+                    "height",
+                    yScale.bandwidth()
+                )
+                .attr("width", 0)
+
+                // Australia highlighted
+                .attr(
+                    "fill",
+                    function (d) {
+
+                        if (
+                            d.country ===
+                            "Australia"
+                        ) {
+
+                            return "#d95f02";
+
+                        }
+
+                        return "#4c78a8";
+                    }
+                )
+
+
+                // -----------------------------------
+                // TOOLTIP EVENTS
+                // -----------------------------------
+
+                .on(
+                    "mouseover",
+                    function (event, d) {
+
+                        d3.select(this)
+                            .attr(
+                                "opacity",
+                                0.75
+                            );
+
+
+                        tooltip
+                            .style(
+                                "visibility",
+                                "visible"
+                            )
+                            .html(
+
+                                "<strong>" +
+                                d.country +
+                                "</strong><br>" +
+
+                                selectedIndicator +
+                                "<br>" +
+
+                                selectedYear +
+                                ": <strong>" +
+
+                                d3.format(
+                                    ".2~f"
+                                )(d.value) +
+
+                                "</strong> " +
+                                unit
+
+                            );
+
+                    }
+                )
+
+
+                .on(
+                    "mousemove",
+                    function (event) {
+
+                        tooltip
+                            .style(
+                                "left",
+                                (
+                                    event.pageX +
+                                    12
+                                ) +
+                                "px"
+                            )
+                            .style(
+                                "top",
+                                (
+                                    event.pageY -
+                                    28
+                                ) +
+                                "px"
+                            );
+
+                    }
+                )
+
+
+                .on(
+                    "mouseout",
+                    function () {
+
+                        d3.select(this)
+                            .attr(
+                                "opacity",
+                                1
+                            );
+
+
+                        tooltip
+                            .style(
+                                "visibility",
+                                "hidden"
+                            );
+
+                    }
+                );
+
+
+        // Update bars
+
+        barsEnter
+            .merge(bars)
+            .transition()
+            .duration(600)
+
+            .attr(
+                "y",
+                function (d) {
+
+                    return yScale(
+                        d.country
+                    );
+
+                }
+            )
+
+            .attr(
+                "height",
+                yScale.bandwidth()
+            )
+
+            .attr(
+                "width",
+                function (d) {
+
+                    return xScale(
+                        d.value
+                    );
+
+                }
+            )
+
+            .attr(
+                "fill",
+                function (d) {
+
+                    if (
+                        d.country ===
+                        "Australia"
+                    ) {
+
+                        return "#d95f02";
+
+                    }
+
+                    return "#4c78a8";
+                }
             );
 
-        }
-    );
+
+        // -------------------------------------------
+        // VALUE LABELS
+        // -------------------------------------------
+
+        const labels =
+            chartArea
+                .selectAll(
+                    ".value-label"
+                )
+                .data(
+
+                    displayData,
+
+                    function (d) {
+                        return d.country;
+                    }
+
+                );
 
 
+        labels.exit()
+            .remove();
 
-    // ==================================================
-    // YEAR EVENT
-    // ==================================================
 
-    yearDropdown.on(
+        labels
+            .enter()
+            .append("text")
+            .attr(
+                "class",
+                "value-label"
+            )
+            .style(
+                "font-size",
+                "11px"
+            )
+            .attr(
+                "dominant-baseline",
+                "middle"
+            )
+
+            .merge(labels)
+
+            .transition()
+            .duration(600)
+
+            .attr(
+                "x",
+                function (d) {
+
+                    return (
+                        xScale(
+                            d.value
+                        ) + 5
+                    );
+
+                }
+            )
+
+            .attr(
+                "y",
+                function (d) {
+
+                    return (
+                        yScale(
+                            d.country
+                        ) +
+
+                        yScale.bandwidth()
+                        / 2
+                    );
+
+                }
+            )
+
+            .text(
+                function (d) {
+
+                    return d3.format(
+                        ".2~f"
+                    )(d.value);
+
+                }
+            );
+
+
+        console.log(
+            "Selected:",
+            selectedDataset,
+            selectedIndicator,
+            selectedYear
+        );
+    }
+
+
+    // -----------------------------------------------
+    // EVENTS
+    // -----------------------------------------------
+
+    datasetSelect.on(
         "change",
-        function() {
+        function () {
 
-
-            const selectedIndicator =
-                indicatorDropdown
-                    .property(
-                        "value"
-                    );
-
-
-            const selectedYear =
-                +d3.select(this)
-                    .property(
-                        "value"
-                    );
-
-
-            updatePreventionChart(
-                selectedIndicator,
-                selectedYear
-            );
+            updateIndicatorOptions();
 
         }
     );
 
+
+    indicatorSelect.on(
+        "change",
+        function () {
+
+            updateYearOptions();
+
+        }
+    );
+
+
+    yearSelect.on(
+        "change",
+        function () {
+
+            updateChart();
+
+        }
+    );
+
+
+    // -----------------------------------------------
+    // INITIALISE
+    // -----------------------------------------------
+
+    datasetSelect.property(
+        "value",
+        "Risk factors"
+    );
+
+
+    updateIndicatorOptions();
+
+
+    // -----------------------------------------------
+    // SHARED DASHBOARD SUPPORT
+    //
+    // Later, when all visualisations are combined,
+    // the group's shared country selector can call:
+    //
+    // updatePreventionCountry("Australia");
+    //
+    // -----------------------------------------------
+
+    window.updatePreventionCountry =
+        function (country) {
+
+            chartArea
+                .selectAll(".bar")
+                .attr(
+                    "fill",
+                    function (d) {
+
+                        if (
+                            d.country ===
+                            country
+                        ) {
+
+                            return "#d95f02";
+
+                        }
+
+                        return "#4c78a8";
+                    }
+                );
+
+        };
 
 })
-.catch(function(error) {
-
+.catch(function (error) {
 
     console.error(
-        "Error loading prevention data:",
+        "Error loading prevention/risk factor data:",
         error
     );
 
 
-    d3.select(
-        "#preventionStatus"
-    )
-    .text(
-        "Error loading prevention dataset."
-    );
+    d3.select("#preventionChart")
+        .append("p")
+        .text(
+            "Error loading prevention/risk-factor datasets. Check the CSV file paths."
+        );
 
 });
