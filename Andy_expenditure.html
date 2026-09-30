@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Health Expenditure — Module Preview</title>
+    <link rel="stylesheet" href="Css/style.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>How Healthy is Australia?</h1>
+        <p>Health Expenditure module preview — standalone test page (not the final dashboard)</p>
+    </header>
+
+    <main>
+        <div class="visualisation-section">
+            <h2>Health Expenditure — Australia vs OECD</h2>
+            <p>
+                Total, government/compulsory, and voluntary/out-of-pocket health
+                expenditure as a percentage of GDP, 2015–2025, across 14 OECD
+                countries.
+            </p>
+
+            <div class="controls">
+                <label for="expenditureCountrySelect">Country:</label>
+                <select id="expenditureCountrySelect"></select>
+
+                <label for="financingSchemeSelect" style="margin-left: 20px;">Financing scheme:</label>
+                <select id="financingSchemeSelect"></select>
+            </div>
+
+            <p id="expenditureStatus"></p>
+
+            <div id="expenditureChart"></div>
+        </div>
+    </main>
+
+    <script src="Js/expenditure.js"></script>
+
+</body>
+</html>
