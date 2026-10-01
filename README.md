@@ -53,5 +53,5 @@ Pre-submission checks
 [ ] Check all charts on Mercury, not only Live Server.
 [ ] Open browser Developer Tools and confirm there are no console errors.
 [ ] Test at desktop and mobile/tablet widths.
-[ ] Insert the final Mercury URL in the Process Book.
+[https://mercury.swin.edu.au/cos30045/s104441373/assignment3/index.html ] Insert the final Mercury URL in the Process Book.
 [ ] Capture final screenshots for the Process Book and Standup evidence.
