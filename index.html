@@ -1,208 +1,296 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
-    <title>OECD Health Data Explorer</title>
-
-    <!-- CSS -->
-    <link
-        rel="stylesheet"
-        href="Css/style.css"
-    >
-
-    <!-- D3.js Version 7 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interactive OECD health dashboard comparing Australia with selected OECD countries across life expectancy, health expenditure, prevention and risk factors.">
+    <title>How Healthy is Australia? | OECD Health Explorer</title>
+    <link rel="stylesheet" href="Css/style.css">
     <script src="https://d3js.org/d3.v7.min.js"></script>
-
 </head>
-
-
 <body>
-
-    <!-- ==========================================
-         HEADER
-    =========================================== -->
-
-    <header>
-
-        <h1>OECD Health Data Explorer</h1>
-
-        <p>
-            Exploring health outcomes, expenditure, risk factors
-            and preventive healthcare across selected OECD countries.
-        </p>
-
+    <header class="hero" id="overview">
+        <div class="hero__glow hero__glow--one" aria-hidden="true"></div>
+        <div class="hero__glow hero__glow--two" aria-hidden="true"></div>
+        <div class="hero__inner">
+            <div class="eyebrow">COS30045 Data Visualisation · OECD Health Data</div>
+            <h1>How Healthy is Australia?</h1>
+            <p class="hero__lead">
+                Explore how Australia compares with selected OECD countries across life expectancy,
+                healthcare spending, preventive healthcare and selected health risks.
+            </p>
+            <div class="hero__meta" aria-label="Dashboard scope">
+                <span>14 core OECD countries</span>
+                <span>4 datasets</span>
+                <span>2010–2025 coverage</span>
+            </div>
+        </div>
     </header>
 
+    <nav class="top-nav" aria-label="Dashboard sections">
+        <div class="top-nav__inner">
+            <a href="#overview">Overview</a>
+            <a href="#life-section">Life Expectancy</a>
+            <a href="#expenditure-section">Expenditure</a>
+            <a href="#prevention-section">Prevention</a>
+            <a href="#risk-section">Risk Factors</a>
+            <a href="#about-data">About the Data</a>
+        </div>
+    </nav>
 
-    <main>
-
-
-        <!-- ==========================================
-             VISUALISATION 1
-             LIFE EXPECTANCY
-        =========================================== -->
-
-        <section class="visualisation-section">
-
-            <h2>Life Expectancy Trends</h2>
-
-            <p>
-                Select a country to explore changes
-                in life expectancy over time.
-            </p>
-
-
-            <div class="controls">
-
-                <label for="countrySelect">
-                    Select Country:
-                </label>
-
-                <select id="countrySelect"></select>
-
+    <main class="page-shell">
+        <section class="control-panel" aria-labelledby="explore-title">
+            <div>
+                <div class="section-kicker">Explore the dashboard</div>
+                <h2 id="explore-title">Choose a country to follow across every view</h2>
+                <p>
+                    The selected country is highlighted throughout the dashboard. You can also click
+                    a country directly in the comparison charts to change the selection.
+                </p>
             </div>
-
-
-            <p id="status">
-                Loading data...
-            </p>
-
-
-            <div id="chart"></div>
-
+            <div class="global-control">
+                <label for="globalCountrySelect">Selected country</label>
+                <div class="select-wrap">
+                    <select id="globalCountrySelect" aria-label="Selected country"></select>
+                </div>
+                <button type="button" class="button button--ghost" id="resetAustralia">Reset to Australia</button>
+            </div>
         </section>
 
-
-
-        <!-- ==========================================
-             VISUALISATION 2
-             PREVENTIVE HEALTHCARE
-        =========================================== -->
-
-        <section class="visualisation-section prevention-section">
-
-            <h2>Preventive Healthcare Comparison</h2>
-
-            <p>
-                Compare preventive healthcare indicators
-                across selected OECD countries.
-            </p>
-
-
-            <div class="controls">
-
-                <!-- Indicator selector -->
-
-                <label for="preventionIndicator">
-                    Indicator:
-                </label>
-
-                <select id="preventionIndicator"></select>
-
-
-                <!-- Year selector -->
-
-                <label
-                    for="preventionYear"
-                    class="second-control"
-                >
-                    Year:
-                </label>
-
-                <select id="preventionYear"></select>
-
-            </div>
-
-
-            <p id="preventionStatus">
-                Loading prevention data...
-            </p>
-
-
-            <div id="preventionChart"></div>
-
+        <section class="summary-grid" aria-label="Selected country summary">
+            <article class="summary-card">
+                <div class="summary-card__icon">LE</div>
+                <div class="summary-card__body">
+                    <span class="summary-card__label">Life expectancy</span>
+                    <strong id="summaryLifeValue">—</strong>
+                    <span id="summaryLifeMeta">Loading…</span>
+                </div>
+            </article>
+            <article class="summary-card">
+                <div class="summary-card__icon">HE</div>
+                <div class="summary-card__body">
+                    <span class="summary-card__label">Health expenditure</span>
+                    <strong id="summaryExpValue">—</strong>
+                    <span id="summaryExpMeta">Loading…</span>
+                </div>
+            </article>
+            <article class="summary-card">
+                <div class="summary-card__icon">PH</div>
+                <div class="summary-card__body">
+                    <span class="summary-card__label" id="summaryPreventionLabel">Measles coverage</span>
+                    <strong id="summaryPrevValue">—</strong>
+                    <span id="summaryPrevMeta">Loading…</span>
+                </div>
+            </article>
+            <article class="summary-card">
+                <div class="summary-card__icon">RF</div>
+                <div class="summary-card__body">
+                    <span class="summary-card__label" id="summaryRiskLabel">Daily smokers</span>
+                    <strong id="summaryRiskValue">—</strong>
+                    <span id="summaryRiskMeta">Loading…</span>
+                </div>
+            </article>
         </section>
 
-
-
-        <!-- ==========================================
-             VISUALISATION 3
-             RISK FACTORS
-        =========================================== -->
-
-        <section class="visualisation-section risk-section">
-
-            <h2>Risk Factors Comparison</h2>
-
-            <p>
-                Compare the latest available risk-factor observations
-                across selected OECD countries. As reporting years
-                differ between countries, the year of each observation
-                is displayed alongside its value.
-            </p>
-
-
-            <!-- Risk factor indicator selector -->
-
-            <div class="controls">
-
-                <label for="riskIndicator">
-                    Risk Indicator:
-                </label>
-
-                <select id="riskIndicator"></select>
-
+        <section class="dashboard-section" id="life-section" aria-labelledby="life-title">
+            <div class="section-heading">
+                <div>
+                    <div class="section-kicker">01 · Health outcome</div>
+                    <h2 id="life-title">Life expectancy trend</h2>
+                    <p>
+                        Track the selected country over time and compare it with the average across
+                        the 14-country core comparison group.
+                    </p>
+                </div>
+                <div class="section-badge" id="lifeCoverageBadge">Loading…</div>
             </div>
-
-
-            <!-- Risk factor loading/status message -->
-
-            <p id="riskStatus">
-                Loading risk-factor data...
-            </p>
-
-
-            <!-- D3 Risk Factors chart -->
-
-            <div id="riskChart"></div>
-
+            <div class="chart-card">
+                <div class="chart-toolbar">
+                    <div>
+                        <h3 id="lifeChartHeading">Life expectancy</h3>
+                        <p id="lifeStatus" class="chart-status">Loading data…</p>
+                    </div>
+                    <div class="legend-inline" aria-label="Life expectancy legend">
+                        <span><i class="legend-swatch legend-swatch--selected"></i> Selected country</span>
+                        <span><i class="legend-line legend-line--average"></i> Core average</span>
+                    </div>
+                </div>
+                <div id="lifeChart" class="chart-shell" role="img" aria-label="Life expectancy line chart"></div>
+            </div>
         </section>
 
+        <section class="dashboard-section" id="expenditure-section" aria-labelledby="expenditure-title">
+            <div class="section-heading">
+                <div>
+                    <div class="section-kicker">02 · Healthcare investment</div>
+                    <h2 id="expenditure-title">Health expenditure</h2>
+                    <p>
+                        Explore spending trends for the selected country, then compare the balance
+                        between government/compulsory and voluntary/out-of-pocket spending across countries.
+                    </p>
+                </div>
+                <div class="section-badge">Percentage of GDP</div>
+            </div>
 
+            <div class="split-grid">
+                <div class="chart-card">
+                    <div class="chart-toolbar chart-toolbar--stackable">
+                        <div>
+                            <h3>Spending trend</h3>
+                            <p id="expenditureStatus" class="chart-status">Loading data…</p>
+                        </div>
+                        <div class="field-group">
+                            <label for="financingSchemeSelect">Financing scheme</label>
+                            <select id="financingSchemeSelect"></select>
+                        </div>
+                    </div>
+                    <div class="legend-inline" aria-label="Health expenditure trend legend">
+                        <span><i class="legend-swatch legend-swatch--teal"></i> Selected country</span>
+                        <span><i class="legend-line legend-line--average"></i> Core average</span>
+                    </div>
+                    <div id="expenditureTrendChart" class="chart-shell" role="img" aria-label="Health expenditure trend chart"></div>
+                </div>
+
+                <div class="chart-card">
+                    <div class="chart-toolbar chart-toolbar--stackable">
+                        <div>
+                            <h3>Funding mix by country</h3>
+                            <p id="expenditureDumbbellStatus" class="chart-status">Loading data…</p>
+                        </div>
+                        <div class="field-group field-group--compact">
+                            <label for="dumbbellYearSelect">Year</label>
+                            <select id="dumbbellYearSelect"></select>
+                        </div>
+                    </div>
+                    <div class="legend-inline" aria-label="Funding mix legend">
+                        <span><i class="legend-dot legend-dot--gov"></i> Government / compulsory</span>
+                        <span><i class="legend-dot legend-dot--vol"></i> Voluntary / OOP</span>
+                    </div>
+                    <div id="expenditureDumbbellChart" class="chart-shell chart-shell--tall" role="img" aria-label="Funding mix dumbbell chart"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="dashboard-section" id="prevention-section" aria-labelledby="prevention-title">
+            <div class="section-heading">
+                <div>
+                    <div class="section-kicker">03 · Preventive healthcare</div>
+                    <h2 id="prevention-title">Preventive healthcare comparison</h2>
+                    <p>
+                        Compare immunisation and prevention indicators across the core countries.
+                        Missing country-year observations are excluded rather than treated as zero.
+                    </p>
+                </div>
+                <div class="section-badge" id="preventionCoverageBadge">Loading…</div>
+            </div>
+            <div class="chart-card">
+                <div class="chart-toolbar chart-toolbar--stackable">
+                    <div>
+                        <h3 id="preventionChartHeading">Prevention indicator</h3>
+                        <p id="preventionStatus" class="chart-status">Loading data…</p>
+                    </div>
+                    <div class="control-row">
+                        <div class="field-group">
+                            <label for="preventionIndicator">Indicator</label>
+                            <select id="preventionIndicator"></select>
+                        </div>
+                        <div class="field-group field-group--compact">
+                            <label for="preventionYear">Year</label>
+                            <select id="preventionYear"></select>
+                        </div>
+                    </div>
+                </div>
+                <div class="legend-inline">
+                    <span><i class="legend-swatch legend-swatch--selected"></i> Selected country</span>
+                    <span><i class="legend-swatch legend-swatch--blue"></i> Other core countries</span>
+                </div>
+                <div id="preventionChart" class="chart-shell chart-shell--tall" role="img" aria-label="Preventive healthcare horizontal bar chart"></div>
+            </div>
+        </section>
+
+        <section class="dashboard-section" id="risk-section" aria-labelledby="risk-title">
+            <div class="section-heading">
+                <div>
+                    <div class="section-kicker">04 · Risk factors</div>
+                    <h2 id="risk-title">Risk factor comparison</h2>
+                    <p>
+                        Risk-factor reporting is irregular across countries. This view therefore uses
+                        each country's latest available observation and displays its observation year.
+                    </p>
+                </div>
+                <div class="section-badge">Latest available</div>
+            </div>
+            <div class="chart-card">
+                <div class="chart-toolbar chart-toolbar--stackable">
+                    <div>
+                        <h3 id="riskChartHeading">Risk factor</h3>
+                        <p id="riskStatus" class="chart-status">Loading data…</p>
+                    </div>
+                    <div class="field-group">
+                        <label for="riskIndicator">Indicator</label>
+                        <select id="riskIndicator"></select>
+                    </div>
+                </div>
+                <div class="legend-inline">
+                    <span><i class="legend-swatch legend-swatch--selected"></i> Selected country</span>
+                    <span><i class="legend-swatch legend-swatch--blue"></i> Other core countries</span>
+                    <span class="legend-note">Lower values generally indicate lower exposure for the included risk indicators.</span>
+                </div>
+                <div id="riskChart" class="chart-shell chart-shell--tall" role="img" aria-label="Risk factor horizontal bar chart"></div>
+            </div>
+        </section>
+
+        <section class="data-notes" id="about-data" aria-labelledby="data-notes-title">
+            <div class="section-kicker">Method & interpretation</div>
+            <h2 id="data-notes-title">About the data</h2>
+            <div class="notes-grid">
+                <article>
+                    <h3>Four OECD datasets</h3>
+                    <p>
+                        The dashboard combines cleaned OECD data for life expectancy, health expenditure,
+                        preventive healthcare and selected risk factors.
+                    </p>
+                </article>
+                <article>
+                    <h3>14-country core group</h3>
+                    <p>
+                        The comparison group is the intersection of countries available across all four
+                        processed datasets, identified during the project's cross-dataset audit.
+                    </p>
+                </article>
+                <article>
+                    <h3>Different reporting patterns</h3>
+                    <p>
+                        Time coverage varies by dataset. Prevention views show valid observations for the
+                        selected year, while risk factors use each country's latest available observation.
+                    </p>
+                </article>
+                <article>
+                    <h3>Interpret with care</h3>
+                    <p>
+                        The dashboard supports exploration and comparison; it does not establish causal
+                        relationships between spending, prevention, risks and health outcomes.
+                    </p>
+                </article>
+            </div>
+            <p class="source-note">
+                Source: OECD health datasets supplied and cleaned for the COS30045 project. Values shown are
+                based on the processed CSV files included with this submission.
+            </p>
+        </section>
     </main>
 
+    <footer class="site-footer">
+        <div>
+            <strong>How Healthy is Australia?</strong>
+            <span>COS30045 Data Visualisation · 2026</span>
+        </div>
+        <a href="#overview">Back to top ↑</a>
+    </footer>
 
+    <div id="tooltip" class="tooltip" role="status" aria-live="polite"></div>
+    <div id="fatalError" class="fatal-error" hidden></div>
 
-    <!-- ==========================================
-         SHARED TOOLTIP
-    =========================================== -->
-
-    <div id="tooltip"></div>
-
-
-
-    <!-- ==========================================
-         JAVASCRIPT FILES
-    =========================================== -->
-
-    <!-- Visualisation 1: Life Expectancy -->
     <script src="Js/main.js"></script>
-
-    <!-- Visualisation 2: Preventive Healthcare -->
-    <script src="Js/prevention-samith.js"></script>
-
-    <!-- Visualisation 3: Risk Factors -->
-    <script src="Js/riskFactors-samith.js"></script>
-
-
 </body>
-
 </html>
