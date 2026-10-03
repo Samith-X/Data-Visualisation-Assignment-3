@@ -401,6 +401,27 @@ select:hover {
     font-size: 0.86rem;
 }
 
+.chart-measure-label {
+    margin: 6px 0 0;
+    color: var(--text);
+    font-size: 0.9rem;
+    font-weight: 750;
+}
+
+.chart-cue {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin: 7px 0 0;
+    padding: 5px 9px;
+    border-radius: 999px;
+    background: #eef7f2;
+    border: 1px solid #d7eadf;
+    color: #2d6a4f;
+    font-size: 0.78rem;
+    font-weight: 800;
+}
+
 .control-row {
     display: flex;
     gap: 12px;

@@ -497,7 +497,13 @@
         addGridX(g, x, innerHeight);
         g.append("g").attr("transform", `translate(0,${innerHeight})`).call(d3.axisBottom(x).ticks(6));
         g.append("g").call(d3.axisLeft(y).tickSize(0)).call(axis => axis.select(".domain").remove());
-        g.append("text").attr("class", "axis-label-svg").attr("x", innerWidth / 2).attr("y", innerHeight + 44).attr("text-anchor", "middle").text(grouped[0].unit);
+        const displayMeasure = preventionDisplayLabel(state.preventionIndicator, grouped[0].unit);
+        g.append("text")
+            .attr("class", "axis-label-svg")
+            .attr("x", innerWidth / 2)
+            .attr("y", innerHeight + 44)
+            .attr("text-anchor", "middle")
+            .text(displayMeasure);
 
         g.selectAll(".prevention-bar")
             .data(grouped, d => d.code)
@@ -509,7 +515,14 @@
             .attr("rx", 5)
             .attr("fill", d => d.country === state.country ? COLORS.selected : COLORS.blue)
             .attr("width", 0)
-            .on("mouseenter", (event, d) => showTooltip(event, `<strong>${escapeHtml(d.country)} · ${state.preventionYear}</strong>${escapeHtml(state.preventionIndicator)}<br>${d.value.toFixed(1)}<br>${escapeHtml(d.unit)}`))
+            .on("mouseenter", (event, d) => showTooltip(
+                event,
+                `<strong>${escapeHtml(d.country)} · ${state.preventionYear}</strong>` +
+                `${escapeHtml(state.preventionIndicator)}<br>` +
+                `${escapeHtml(displayMeasure)}<br>` +
+                `<strong>${d.value.toFixed(1)}%</strong><br>` +
+                `Higher = more people protected`
+            ))
             .on("mousemove", moveTooltip)
             .on("mouseleave", hideTooltip)
             .on("click", (_, d) => setSelectedCountry(d.country))
@@ -526,6 +539,8 @@
             .text(d => d.value.toFixed(1));
 
         setText("preventionChartHeading", `${state.preventionIndicator} · ${state.preventionYear}`);
+        setText("preventionMeasureLabel", displayMeasure);
+        setText("preventionCue", "Higher = more people protected");
         setText("preventionStatus", `${grouped.length} of ${coreCodes.length} core countries have a valid observation · bars are ranked highest to lowest`);
         setText("preventionCoverageBadge", `${grouped.length}/${coreCodes.length} countries`);
     }
@@ -683,6 +698,20 @@
         if (/percentage/i.test(unit)) return `${value.toFixed(1)}%`;
         if (/cigarettes/i.test(unit)) return short ? `${value.toFixed(1)}/day` : `${value.toFixed(1)}`;
         return value.toFixed(1);
+    }
+
+    function preventionDisplayLabel(indicator, fallbackUnit = "") {
+        if (indicator === "Diphtheria, Tetanus, Pertussis" ||
+            indicator === "Hepatitis B" ||
+            indicator === "Measles") {
+            return "Children immunised (% of target age group)";
+        }
+
+        if (indicator === "Influenza") {
+            return "Adults aged 65+ vaccinated (%)";
+        }
+
+        return fallbackUnit || "Vaccination coverage (%)";
     }
 
     function shortPreventionLabel(indicator) {
